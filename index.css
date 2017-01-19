@@ -1,6 +1,7 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css?family=Overpass');
 @import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 
 /* ===============================================================
 	CSS 
@@ -18,7 +19,7 @@ h1, footer {
 
 h1 {
 	margin-bottom: -1em;
-	font-family: "Overpass", sans-serif;
+	font-family: "Cabin", sans-serif;
 }
 
 footer {
