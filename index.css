@@ -1,0 +1,14 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Trocchi');
+
+/* css */
+h1 {
+	font-family: "Trocchi", serif;
+	font-weight: bold;
+	font-color: #ccc;
+}
+
+small {
+	font-family: "Trocchi", serif;
+
+}
