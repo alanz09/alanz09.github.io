@@ -1,14 +1,49 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css?family=Trocchi');
+@import url('https://fonts.googleapis.com/css?family=Overpass');
 
 /* css */
-h1 {
-	font-family: "Trocchi", serif;
+
+ul {
+	font-family: "Overpass", sans-serif;
+
+}
+
+div.container {
+	width: 100%;
+	border: 1px solid blue;
+}
+
+h1, footer {
+	text-align: left;
+	padding: 1em;
+	font-family: "Overpass", sans-serif;
 	font-weight: bold;
 	font-color: #ccc;
 }
 
-small {
-	font-family: "Trocchi", serif;
-
+nav {
+	float: left;
+	max-width: 200px;
+	margin: 0;
+	padding: 2em;
 }
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul a{
+	text-decoration: none;
+}
+
+p {
+	margin-left: 170px;
+	padding: 1em;
+	overflow: hidden;
+} 
+
+figcaption {
+	font-family: "Overpass", sans-serif;
+}
+
