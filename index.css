@@ -11,17 +11,18 @@
 
 h1, footer {
 	text-align: left;
-	padding: 1em;
 	font-weight: bold;
 	font-color: #ccc;
 }
 
 h1 {
 	font-family: "Cabin", sans-serif;
+	font-size: 2.5em;
 }
 
 footer {
 	font-family: 'Arimo', sans-serif;
+	padding: 1em;
 }
 
 /* nav bar links */
@@ -55,7 +56,7 @@ a.nav-link:visited{
 }
 
 a.nav-link:hover{
-	color: #fb3f00;
+	color: blue;
 	text-decoration: none;
 }
 
