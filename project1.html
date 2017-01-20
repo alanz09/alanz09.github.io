@@ -1,93 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>2014</title>
-		<script type="text/javascript" src="d3/d3.js"></script>
-		<style type="text/css">
-
+<head>	
+	<meta charset="utf-8">
+	<style> /* set the CSS */
+		body { font: 12px Arial;}
+		path {
+			stroke: steelblue;
+			stroke-width: 2;
+			fill: none;
+			}
 		.axis path,
 		.axis line {
 			fill: none;
-			stroke: purple;
-		}
-
-		.axis text {
-			font-family: sans-serif;
-			font-size: 11px;
-		}
-		</style>
-	</head>
-	<body>
-		<script type="text/javascript">
-
-			//Width and height
-			var w = 800;
-			var h = 450;
-			var padding = 30;
-
-			//Static dataset
-			var dataset = [ 
-							['Wk 1', 86], ['Wk 2', 54], ['Wk 3', 154], ['Wk 4', 79], ['Wk 5', 106], ['Wk 6', 109], ['Wk 7', 85], ['Wk 8', 119], ['Wk 9', 27], ['Wk 10', 83], ['Wk 11', 28], ['Wk 12', 48], ['Wk 13', 134], ['Wk 14', 105], ['Wk 15', 84], ['Wk 16', 65], ['Wk 17', 63], ['Wk 18', 80], ['Wk 19', 83], ['Wk 20', 27], ['Wk 21', 113], ['Wk 22', 142], ['Wk 23', 121], ['Wk 24', 236], ['Wk 25', 98], ['Wk 26', 27], ['Wk 27', 111], ['Wk 28', 137], ['Wk 29', 85], ['Wk 30', 163], ['Wk 31', 100], ['Wk 32', 123], ['Wk 33', 149], ['Wk 34', 175], ['Wk 35', 162], ['Wk 36', 103], ['Wk 37', 78], ['Wk 38', 117], ['Wk 39', 65], ['Wk 40', 92], ['Wk 41', 109], ['Wk 42', 119], ['Wk 43', 65], ['Wk 44', 101], ['Wk 45', 67], ['Wk 46', 77], ['Wk 47', 86], ['Wk 48', 115], ['Wk 49', 86], ['Wk 50', 125], ['Wk 51', 69], ['Wk 52', 115]
-							];
-
-			//Create scale functions
-			var xScale = d3.scale.linear()
-								 .domain([0, d3.max(dataset, function(d) { return d[0]; })])
-								 .range([padding, w - padding * 2]);
-
-			var yScale = d3.scale.linear()
-								 .domain([0, d3.max(dataset, function(d) { return d[1]; })])
-								 .range([h - padding, padding]);
-
-			var rScale = d3.scale.linear()
-								 .domain([0, d3.max(dataset, function(d) { return d[1]; })])
-								 .range([2, 5]);
-
-			//Define X axis
-			var xAxis = d3.svg.axis()
-							  .scale(xScale)
-							  .orient("bottom")
-							  .ticks(5);
-
-			//Define Y axis
-			var yAxis = d3.svg.axis()
-							  .scale(yScale)
-							  .orient("left")
-							  .ticks(5);
-
-			//Create SVG element
-			var svg = d3.select("body")
-						.append("svg")
-						.attr("width", w)
-						.attr("height", h);
-
-			//Create circles
-			svg.selectAll("circle")
-			   .data(dataset)
-			   .enter()
-			   .append("circle")
-			   .attr("cx", function(d) {
-			   		return xScale(d[0]);
-			   })
-			   .attr("cy", function(d) {
-			   		return yScale(d[1]);
-			   })
-			   .attr("r", function(d) {
-			   		return rScale(d[1]);
-			   });
-
-
-			//Create X axis
-			svg.append("g")
-				.attr("class", "axis")
-				.attr("transform", "translate(0," + (h - padding) + ")")
-				.call(xAxis);
-			
-			//Create Y axis
-			svg.append("g")
-				.attr("class", "axis")
-				.attr("transform", "translate(" + padding + ",0)")
-				.call(yAxis);
-	</body>
-</html>
+			stroke: grey;
+			stroke-width: 1;
+			shape-rendering: crispEdges;
+			}
+	</style>
+</head>
+<body>
+		<!-- load the d3.js library -->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script>
+	// Set the dimensions of the canvas / graph
+	var margin = {top: 30, right: 20, bottom: 30, left: 50},
+		width = 600 - margin.left - margin.right,
+		height = 270 - margin.top - margin.bottom;
+	
+	// Parse the date / time
+	var parseDate = d3.time.format("%d-%b-%y").parse;
+	
+	// Set the ranges
+	var x = d3.time.scale().range([0, width]);
+	var y = d3.scale.linear().range([height, 0]);
+	
+	// Define the axes
+	var xAxis = d3.svg.axis().scale(x)
+		.orient("bottom").ticks(5);
+		
+	var yAxis = d3.svg.axis().scale(y)
+		.orient("left").ticks(5);
+	
+	// Define the line
+	var valueline = d3.svg.line()
+		.x(function(d) { return x(d.date); })
+		.y(function(d) { return y(d.close); });
+	
+	// Adds the svg canvas
+	var svg = d3.select("body")
+		.append("svg")
+			.attr("width", width + margin.left + margin.right)
+			.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+			.attr("transform",
+				"translate(" + margin.left + "," + margin.top + ")");
+	
+	// Get the data
+	d3.csv("data/data.csv", function(error, data) {
+		data.forEach(function(d) {
+			d.date = parseDate(d.date);
+			d.close = +d.close;
+		});
+	
+	// Scale the range of the data
+	x.domain(d3.extent(data, function(d) { return d.date; }));
+	y.domain([0, d3.max(data, function(d) { return d.close; })]);
+	
+	// Add the valueline path.
+	svg.append("path")
+		.attr("class", "line")
+		.attr("d", valueline(data));
+	
+	// Add the X Axis
+	svg.append("g")
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + height + ")")
+		.call(xAxis);
+	
+	// Add the Y Axis
+	svg.append("g")
+		.attr("class", "y axis")
+		.call(yAxis);
+		});
+	</script>
+</body>
