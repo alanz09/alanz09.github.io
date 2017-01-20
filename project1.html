@@ -2,6 +2,8 @@
 <head>	
 	<meta charset="utf-8">
 	<script type="text/javascript" src="d3/d3.js"></script>
+
+<!-- CSS CODE HERE =================================================================================================== -->
 	<style type="text/css">
 		body { font: 12px Arial;}
 		path {
@@ -20,18 +22,18 @@
 </head>
 <body>
 	<!-- load the d3.js library -->
+
 	<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<!-- D3 JAVASCRIPT CODE HERE ========================================================================================= -->
 	<script>
 	// Set the dimensions of the canvas / graph
 	var margin = {top: 30, right: 20, bottom: 30, left: 50},
 		width = 600 - margin.left - margin.right,
 		height = 270 - margin.top - margin.bottom;
 	
-	// Parse the date / time
-	var parseDate = d3.time.format("%d-%b-%y").parse;
-	
 	// Set the ranges
-	var x = d3.time.scale().range([0, width]);
+	var x = d3.scale.linear().range([0, width]);
 	var y = d3.scale.linear().range([height, 0]);
 	
 	// Define the axes
@@ -58,7 +60,7 @@
 	// Get the data
 	d3.csv("data/project1_year1.csv", function(error, data) {
 		data.forEach(function(d) {
-			d.date = parseDate(d.date);
+			d.date = +d.date;
 			d.close = +d.close;
 		});
 	
