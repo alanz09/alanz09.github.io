@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Line Chart Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+  <script language="JavaScript">
+  function displayLineChart() {
+
+// DATA SET 
+    var data = {
+        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+        datasets: [
+            {
+                label: "year 2014",
+                fillColor: "rgba(255, 255, 255, 0)",
+                strokeColor: "rgba(120, 93, 203, 1)",
+                pointColor: "rgba(120, 93, 203, 1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [86, 54, 154, 79, 106, 109, 85, 119, 27, 83, 28, 48, 134, 105, 84, 65, 63, 80, 83, 27, 113, 142, 121, 236, 98, 27, 111, 137, 85, 163, 100, 123, 149, 175, 162, 103, 78, 117, 65, 92, 109, 119, 65, 101, 67, 77, 86, 115, 86, 125, 69, 115]
+            },
+            {
+                label: "year 2015",
+                fillColor: "rgba(255, 255, 255, 0)",
+                strokeColor: "rgba(0, 151, 219, 1)",
+                pointColor: "rgba(0, 151, 219, 1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [116, 310, 160, 130, 185, 150, 162, 185, 166, 181, 125, 127, 131, 141, 139, 202, 223, 139, 154, 162, 136, 13, 57, 217, 233, 238, 132, 144, 83, 227, 204, 160, 189, 235, 217, 147, 180, 103, 74, 111, 154, 237, 248, 171, 119, 138, 175, 77, 86, 125, 181, 84]
+            },
+            {
+                label: "year 2016",
+                spanGaps: false,
+                fillColor: "rgba(255, 255, 255, 0)",
+                strokeColor: "rgba(255, 213, 80, 1)",
+                pointColor: "rgba(255, 213, 80, 1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [265, 262, 235, 165, 212, 165, 157, 156, 168, 109, 7, 60, 130, 256, 158, 159, 115, 294, 191, 170, 208, 147, 182, 55, 158, 168, 85, 208, 143, 219, 204, 266, 266, 245, 297, 291, 197, 252, 200, 186, 166, 214, 219, 203, 150, 139, 179, 214, 173, 178, 170, 200]
+            }
+        ]
+    };
+
+// GLOBAL CHART OPTIONS 
+    Chart.defaults.global.animationSteps = 50;
+    Chart.defaults.global.tooltipYPadding = 16;
+    Chart.defaults.global.tooltipCornerRadius = 10;
+    Chart.defaults.global.tooltipTitleFontStyle = "Arial";
+    Chart.defaults.global.tooltipFillColor = "rgba(152,152,152,1)";
+    Chart.defaults.global.animationEasing = "easeOutBounce";
+    Chart.defaults.global.responsive = false;
+
+    var ctx = document.getElementById("lineChart").getContext("2d");   
+
+// CHART SPECIFIC OPTIONS  
+    var lineChart = new Chart(ctx).Line(data, {
+        responsive: true,
+        pointDotRadius: 3,
+        bezierCurve: true,
+        scaleShowVerticalLines: false,
+        scaleGridLineColor: "white",
+        multiTooltipTemplate: "<%=datasetLabel%> : <%= value %>",});
+  }
+  </script>
+
+<!-- STYLE CSS ========================== --> 
+<style>
+
+.container {
+    width: 70%;
+    border: 1px solid blue;
+    margin: 20px auto;
+}
+
+.p {
+    text-align: center;
+    font-size: 11px;
+    padding-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: normal;
+}
+
+</style>
+
+</head>
+
+<!-- BODY ================================ --> 
+
+<body onload="displayLineChart();">
+ <div class="container">
+    <h2> all years </h2> 
+    <div class="box">
+        <canvas id="lineChart" height="500" width="1000"></canvas>
+    </div>
+</div>
+
+<div id="legend"></div>
+
+<p class="p">Information Design and Visualization. <a href=" " target="_blank">hi</a>.</p>
+
+</body>
+</html>
