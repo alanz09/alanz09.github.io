@@ -20,6 +20,21 @@ h1 {
 	font-size: 2.5em;
 }
 
+a.amytitle-link:link{
+	color: #000000;
+	text-decoration: none;
+}
+
+a.amytitle-link:visited{
+	color: #000000;
+	text-decoration: none;
+}
+
+a.amytitle-link:hover{
+	color: #A9A9A9;
+	text-decoration: none;
+}
+
 footer {
 	font-family: 'Arimo', sans-serif;
 	padding: 1em;
@@ -30,8 +45,7 @@ footer {
 nav {
 	float: left;
 	max-width: 200px;
-	margin: 0;
-	padding: 2em;
+	padding-left: 3em;
 }
 
 nav ul {
@@ -129,6 +143,11 @@ figure img {
 figure figcaption {
     text-align: center;
     font-family: "Overpass", sans-serif;
+}
+
+.amypic {
+	font-family: 'Arimo', sans-serif;
+	font-weight: bold;
 }
 
 a.fig-link:link{
