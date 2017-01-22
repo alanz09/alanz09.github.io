@@ -80,6 +80,7 @@ p {
 	margin-left: 170px;
 	padding: 1em;
 	overflow: hidden;
+	float: left;
 } 
 
 /* pictures */
