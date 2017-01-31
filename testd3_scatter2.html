@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<!-- *** USE THIS ONE *** 
+This is a version of all 3 years made with dataset externally. Example from cereal graph online http://bl.ocks.org/weiglemc/6185069 --> 
+
+<style>
+		
+		@import url('https://fonts.googleapis.com/css?family=Gudea|News+Cycle|Source+Sans+Pro:400,700');
+
+		body {
+		  font: 11px sans-serif;
+		  color: #696969;
+		}
+
+		.axis path,
+		.axis line {
+		  fill: none;
+		  stroke: #D3D3D3;
+		  shape-rendering: crispEdges;
+		}
+
+		.dot {
+		  stroke: #FFFFFF;
+		}
+
+		.tooltip {
+		  	position: absolute;
+		  	width: 86px;
+		  	height: 45px;
+		  	pointer-events: none;
+			line-height: 1.3;
+			background: rgba(0, 0, 0, 0.8);
+			color: #fff;
+			padding: 10px;
+			border-radius: 2px;
+			font-family: "Arial", sans-serif;
+			font-size: 12px;
+			border-radius: 5px;
+			box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+		}
+
+		#col-left {
+			float: left;
+			width: 20%;
+			margin-top: 90px;
+			padding: 20px;
+			line-height: 2.5em;
+						border: 1px solid blue;
+
+		}
+
+		#graphHere {
+			float: left;
+			width: 70%;
+			border: 1px solid red;
+						margin-top: 90px;
+
+		}
+
+		#title {
+			float: left;
+			width: 60%;
+			margin-bottom: 60px;
+						border: 1px solid orange;
+
+		}
+
+		.tick text{
+	    	font-size: 10px;
+	  	}
+
+	  	.tick line{
+	    	opacity: 0.4;
+	    	stroke-dasharray: 2,8;
+	 	}
+
+		/* 
+		http://bl.ocks.org/peterssonjonas/4a0e7cb8d23231243e0e
+
+		for size of R == .attr("r", function (d) { return 6 * Math.sqrt(d[rCat] / Math.PI); })
+		*/
+
+</style>
+<body>
+		<div id="col-left">
+			<p> <strong>S E A R C H I N G </strong><br>
+			(sərCHiNG) adj.<br>
+			<strong>1</strong> to uncover, find, or come to know<br> by inquiry or scrutiny
+			 </p>
+		</div>
+		<div id="graphHere"></div>
+
+<!-- JAVASCRIPT ============================== --> 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script>
+		var margin = {top: 20, right: 20, bottom: 30, left: 40},
+		    width = 900 - margin.left - margin.right,
+		    height = 500 - margin.top - margin.bottom;
+
+/* 
+ * value accessor - returns the value to encode for a given data object.
+ * scale - maps value to a visual display encoding, such as a pixel position.
+ * map function - maps from data value to display value
+ */ 
+
+// setup x 
+		var xValue = function(d) { return d.Week;}, // data -> value
+		    xScale = d3.scale.linear().range([0, width]), // value -> display
+		    xMap = function(d) { return xScale(xValue(d));}, // data -> display
+		    xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+
+// setup y
+		var yValue = function(d) { return d.Counts;}, // data -> value
+		    yScale = d3.scale.linear().range([height, 0]), // value -> display
+		    yMap = function(d) { return yScale(yValue(d));}, // data -> display
+		    yAxis = d3.svg.axis()
+		    	.scale(yScale)
+		    	.orient("left")
+		    	.innerTickSize(-width)
+			    .outerTickSize(0)
+			    .tickPadding(10);
+
+// setup fill color
+		var yearColors = d3.scale.linear().domain([0, 50]).range(["#87CEFF", "#0000FF"]);
+
+// add the graph canvas to the body of the webpage
+		var svg = d3.select("#graphHere")
+			.append("svg")
+		    .attr("width", width + margin.left + margin.right)
+		    .attr("height", height + margin.top + margin.bottom)
+		  .append("g")
+		    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// add the tooltip area to the webpage
+		var tooltip = d3.select("body").append("div")
+		    .attr("class", "tooltip")
+		    .style("opacity", 0);
+
+// load data
+		d3.csv("years.csv", function(error, data) {
+
+// change string (from CSV) into number format
+	  data.forEach(function(d) {
+	    d.Year = +d.Year;
+	    d.Week = +d.Week;
+	    d.Counts = +d.Counts;
+	  });
+
+// don't want dots overlapping axis, so add in buffer to data domain
+	  xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
+	  yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+
+// x-axis
+	  svg.append("g")
+	      .attr("class", "x axis")
+	      .attr("transform", "translate(0," + height + ")")
+	      .call(xAxis)
+	    .append("text")
+	      .attr("class", "label")
+	      .attr("x", width)
+	      .attr("y", -6)
+	      .style("text-anchor", "end")
+	      .text("Week");
+
+// y-axis
+	  svg.append("g")
+	      .attr("class", "y axis")
+	      .call(yAxis)
+	    .append("text")
+	      .attr("class", "label")
+	      .attr("transform", "rotate(-90)")
+	      .attr("y", 6)
+	      .attr("dy", ".71em")
+	      .style("text-anchor", "end")
+	      .text("Searches");
+
+// draw dots
+  svg.selectAll(".dot")
+      .data(data)
+    .enter().append("circle")
+      .attr("class", "dot")
+      .attr("cx", xMap)
+      .attr("cy", yMap)
+     .attr("r", 7)
+      .style("fill", function(d,i){
+      	if (d.Year == "2014"){return "rgba(66, 133, 244, 0.7)"}
+      		else if (d.Year == "2015") {return "rgba(251, 188, 5, 0.7)"}
+      		else {return "rgba(52, 168, 83, 0.7)"}; 
+      })
+      .on("mouseover", function(d) {
+          tooltip.transition()
+               .duration(200)
+               .style("opacity", .9);
+          tooltip.html(d["Year"] + "<br/>" + 
+          	"<strong>Week: </strong>" + xValue(d) 
+	        + "<br/> " + "<strong>Searches: </strong>" + yValue(d))
+               .style("left", (d3.event.pageX + 5) + "px")
+               .style("top", (d3.event.pageY - 28) + "px");
+      	d3.select(this).attr("r", 10).style("fill", function(d,i){
+      			if (d.Year == "2014"){return "rgba(66, 133, 244, 1)"}
+      			else if (d.Year == "2015") {return "rgba(251, 188, 5, 1)"}
+      			else {return "rgba(52, 168, 83, 1)"}; 
+      	});
+      	})
+      .on("mouseout", function(d) {
+          tooltip.transition()
+               .duration(500)
+               .style("opacity", 0);
+         d3.select(this).attr("r", 7).style("fill", function(d,i){
+      	if (d.Year == "2014"){return "rgba(66, 133, 244, 0.7)"}
+      		else if (d.Year == "2015") {return "rgba(251, 188, 5, 0.7)"}
+      		else {return "rgba(52, 168, 83, 0.7)"}; 
+      })
+      });
+
+// draw legend
+  var legend = svg.selectAll(".legend")
+      .data(color.domain())
+    .enter().append("g")
+      .attr("class", "legend")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+// draw legend colored rectangles
+  legend.append("rect")
+      .attr("x", width - 18)
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", yearColors);
+
+// draw legend text
+  legend.append("text")
+      .attr("x", width - 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .style("text-anchor", "end")
+      .text(function(d) { return d;})
+});
+
+
+</script>
+</body>
+</html>
