@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>2016: Amy's Search</title>
+    <title>Programs: Amy's Search</title>
 
 <!-- CSS ============================================--> 
 
 <style>
 
     @import url('https://fonts.googleapis.com/css?family=Hind');
-    @import url('https://fonts.googleapis.com/css?family=Gudea|News+Cycle|Source+Sans+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Gudea|News+Cycle|Source+Sans+Pro:400,700');
 
     /* font-family: 'Source Sans Pro', sans-serif;
         font-family: 'News Cycle', sans-serif;
@@ -20,8 +20,7 @@
             width: 75%;
             margin: auto;
             display: inline-block;
-            margin-top: 10px;
-            border: 1px solid blue;
+            margin-top: 80px;
         }
 
        .page_title {
@@ -78,8 +77,6 @@
             margin-top: 80px;
             padding: 10px;
             padding-left: 20px;
-                        border: 1px solid red;
-
         }
 
         #col-right {
@@ -177,18 +174,19 @@
 <div id="col-left">
     <div id="desc_text">
         <br>
-        <p><strong id="search">2 0 1 6</strong></p>
+        <p><strong id="search">s k i l l s</strong>
         <p><strong>1</strong> to uncover, find, or come to know<br> by inquiry or scrutiny</p>
         <br>
-        <a href=https://alanz09.github.io/project1_2015pt2 class="previous"/>< < < b a c k</a>
+        <a href=https://alanz09.github.io/project1_2016pt2 class="previous"/>< < < p r e v i o u s > > > </a>
         <a href=https://alanz09.github.io class="home"/>| h o m e |</a>
-        <a href=https://alanz09.github.io/bar_locations class="next"/>n e x t > > > </a>
+        <a href=https://alanz09.github.io/project1_2016 class="next"/>< < < n e x t > > > </a>
         <br>
         <br>
         <br>
         <br>
         <br>
         <br>
+ 
     </div>
    <!-- <div id="legend">
         <img class="legend_pic" src=http://i1352.photobucket.com/albums/q643/alanz09/Screen%20Shot%202017-01-23%20at%209.04.38%20PM_zpskl04qiw8.png style="width: 15px; height: 15px;">
@@ -205,11 +203,129 @@
     </div>
 
 <div class="graph">
-	<img src="http://i1352.photobucket.com/albums/q643/alanz09/2016_pics2_zps5exdbo9v.png" alt="searching">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+  <canvas id="myChart" height="500" width="1000"></canvas>
+
+<!-- JAVASCRIPT and DATA ===========================--> 
+
+<script>
+var barchart = document.getElementById("myChart");
+var myChart = new Chart(barchart, {
+    type: "bar",
+    data: {
+        labels: ["SAS", "SQL", "Excel", "Indesign", "Illustrator", "CSS", "HTML", "Javascript"],
+        datasets: [{
+          data: [57, 13, 9, 0, 0, 10, 3, 0],
+            label: "2014",
+            fill: false,
+            lineTension: 0.3,
+            responsive: true,
+            animationEasing: "easeOutBounce",
+            animationSteps: 150,
+            backgroundColor: "rgba(66, 133, 244, 0.6)",
+            borderColor: "rgba(66, 133, 244, 0.6)",
+            borderWidth: 2.5,
+            borderJoinStyle: "miter",
+            pointBorderColor: "rgba(66, 133, 244, 0.6)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 4,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(66, 133, 244, 0.6)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            hoverBorderWidth: 2,
+        }, {
+          data: [129, 115, 47, 0, 0, 5, 9, 6],
+            label: "2015",
+            fill: false,
+            lineTension: 0.3,
+            responsive: true,
+            animationEasing: "easeOutBounce",
+            animationSteps: 150,
+            backgroundColor: "rgba(251, 188, 5, 0.6)",
+            borderColor: "rgba(251, 188, 5, 0.6)",
+            borderWidth: 2.5,
+            borderJoinStyle: "miter",
+            pointBorderColor: "rgba(251, 188, 5, 0.6)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 4,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(251, 188, 5, 0.6)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            hoverBorderWidth: 2,
+        }, {
+          data: [78, 5, 82, 10, 19, 12, 25, 1],
+            label: "2016",
+            fill: false,
+            lineTension: 0.3,
+            responsive: true,
+            animationEasing: "easeOutBounce",
+            animationSteps: 150,
+            backgroundColor: "rgba(52, 168, 83, 0.6)",
+            borderColor: "rgba(52, 168, 83, 0.6)",
+            borderWidth: 2.5,
+            borderJoinStyle: "miter",
+            pointBorderColor: "rgba(52, 168, 83, 0.6)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 4,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(52, 168, 83, 0.6)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            hoverBorderWidth: 2,
+        }]
+    },
+    options: {
+        maintainAspectRatio: true,
+      tooltips: {
+        enabled:false,
+        mode: "label",
+      },
+      hover: {
+         mode: "label"
+      },
+      legend:{
+            display:true,
+            horizontalAlign: "left",
+            verticalAlign: "bottom"
+        },
+      title: {
+            display: false,
+            text: "Programs"
+        },
+      scales: {
+            xAxes: [{
+            stacked: true,
+            ticks: {
+                autoSkip:true,
+                maxTicksLimit:8
+            }, 
+              scaleLabel: {
+                display: true,
+                labelString: "Programs"
+
+              },
+              gridLines: {
+                display: false
+              },
+            }],
+             yAxes: [{
+              stacked: true,
+              scaleLabel: {
+                display: true,
+                labelString: "Counts"
+              },
+              gridLines: {
+                display: true
+              }
+            }]
+        }
+    }
+});
+
+</script>
 </div>
 <div>
     <br>
-    <p id="credit_graph"><strong>SOURCE:</strong> personal Google Takeout; made with chart.js</p>
+    <p id="credit_graph">SOURCE: personal Google Takeout; made with chart.js</p>
 </div>
 
 </body>
