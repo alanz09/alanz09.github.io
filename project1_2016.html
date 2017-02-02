@@ -191,9 +191,11 @@ var myChart = new Chart(linechart, {
       mode: "label"
       },
       legend:{
-            display:false,
-            horizontalAlign: "left",
-            verticalAlign: "bottom"
+            labels: {
+                boxWidth: 15
+            },
+            display:true,
+            position:"bottom"
         },
       title: {
             display: false,

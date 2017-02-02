@@ -32,6 +32,7 @@
             height: 180px;
             padding: 20px;
             text-align: center;
+            padding-left: 100px;
             font-size: 12px;
             font-family: "Arial", sans-serif;
             width: 100%;
@@ -50,7 +51,7 @@
         #credit_graph {
             text-align: right;
             font-size: 10px;
-            padding: 10px 40px 10px 5px;
+            padding: 10px 100px 10px 5px;
             font-family: "Source Sans Pro", sans-serif;
             color: #808080;
             }
@@ -121,12 +122,12 @@
 <div id="top">
         <br>
         <br>
-        <p><strong id="search">2 0 1 4</strong></p>
-        <p><strong>1</strong> to uncover, find, or come to know<br> by inquiry or scrutiny</p>
-        <br>
-        <a href=https://alanz09.github.io/project1_all3 class="previous"/>< < < b a c k</a>
-        <a href=https://alanz09.github.io class="home"/>| h o m e |</a>
-        <a href=https://alanz09.github.io/project1_2014pt2 class="next"/>n e x t > > > </a>
+            <p><strong id="search">2 0 1 4</strong></p>
+            <p><strong>1</strong> to uncover, find, or come to know<br> by inquiry or scrutiny</p>
+            <br>
+            <a href=https://alanz09.github.io/project1_all3 class="previous"/>< < < b a c k</a>
+            <a href=https://alanz09.github.io class="home"/>| h o m e |</a>
+            <a href=https://alanz09.github.io/project1_2014pt2 class="next"/>n e x t > > > </a>
         <br>
         <br>
         <br>
@@ -179,21 +180,23 @@ var myChart = new Chart(linechart, {
         maintainAspectRatio: true,
         tooltips: {
             enabled:true,
-      mode: "label",
-      },
-      hover: {
-      mode: "label"
-      },
-      legend:{
-            display:false,
-            horizontalAlign: "left",
-            verticalAlign: "bottom"
+            mode: "label",
         },
-      title: {
+        hover: {
+            mode: "label"
+        },
+        legend:{
+            labels: {
+                boxWidth: 15
+            },
+            display:true,
+            position:"bottom"
+        },
+         title: {
             display: false,
             text: "Statistics"
         },
-      scales: {
+        scales: {
             xAxes: [{
             ticks: {
                 autoSkip:true,
@@ -222,9 +225,8 @@ var myChart = new Chart(linechart, {
 });
 </script>
 </div>
-<div>
-    <br>
-    <p id="credit_graph"><strong>SOURCE:</strong> personal Google Takeout; made with chart.js</p>
+<div id="credit_graph">
+    <p><strong>SOURCE:</strong> personal Google Takeout; made with chart.js</p>
 </div>
 
 </body>
