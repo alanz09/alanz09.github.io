@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Career: Amy's Search</title>
+
+<!-- CSS ============================================--> 
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css?family=Hind');
+    @import url('https://fonts.googleapis.com/css?family=Gudea|News+Cycle|Source+Sans+Pro:400,700');
+
+    /* font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'News Cycle', sans-serif;
+        font-family: 'Gudea', sans-serif; */
+
+        html, body {
+            height:100%;
+            width:100%;        
+        }
+
+        .graph {
+            height:100%;  
+            width: 75%;
+            margin: auto; 
+            margin-top: 20px;
+        }
+
+        #top {
+            height: 180px;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            font-family: "Arial", sans-serif;
+            width: 100%;
+            background-color: #999999;
+        }
+
+        #desc_text {
+            text-align: center;
+            font-size: 12px;
+            padding-top: 5px;
+            font-family: "Arial", sans-serif;
+            width: 100%;
+        }
+
+        p {
+            margin: 0;
+            line-height: 2em;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        #credit_graph {
+            text-align: right;
+            font-size: 10px;
+            padding: 10px 40px 10px 5px;
+            font-family: "Source Sans Pro", sans-serif;
+            color: #808080;
+            }
+
+        #search {
+          font-size: 40px;
+          font-family: "News Cycle", sans-serif;
+          color: white;
+        }
+
+    /* LINKS */
+        a.next:link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a.next:visited {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a.next:hover {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        a.previous:link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a.previous:visited {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a.previous:hover {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        a.home:link {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a.home:visited {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a.home:hover {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+</style>
+</head> 
+
+<body>
+   <!-- <div class="title">
+      <p>(Google) Searching</p>
+    </div> -->
+
+<div id="top">
+        <br>
+        <br>
+        <p><strong id="search">c a r e e r</strong>
+        <p><strong>1</strong> to uncover, find, or come to know<br> by inquiry or scrutiny</p>
+        <br>
+        <a href=https://alanz09.github.io/project1_2016pt2 class="previous"/>< < < b a c k</a>
+        <a href=https://alanz09.github.io class="home"/>| h o m e |</a>
+        <a href=https://alanz09.github.io/bar_locationspt2 class="next"/>n e x t > > > </a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+<div class="graph">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+  <canvas id="myChart" height="500" width="1000"></canvas>
+
+<!-- JAVASCRIPT and DATA ===========================--> 
+
+<script>
+var barchart = document.getElementById("myChart");
+var myChart = new Chart(barchart, {
+    type: "bar",
+    data: {
+        labels: ["internship", "job", "career"],
+        datasets: [{
+          data: [57, 11, 14],
+            label: "2014",
+            fill: false,
+            lineTension: 0.3,
+            responsive: true,
+            animationEasing: "easeOutBounce",
+            animationSteps: 150,
+            backgroundColor: "rgba(66, 133, 244, 0.5)",
+            borderColor: "rgba(66, 133, 244, 0.5)",
+            borderWidth: 2.5,
+            borderJoinStyle: "miter",
+            pointBorderColor: "rgba(66, 133, 244, 0.5)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 4,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(66, 133, 244, 1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            hoverBorderWidth: 2,
+        }, {
+          data: [25, 19, 105],
+            label: "2015",
+            fill: false,
+            lineTension: 0.3,
+            responsive: true,
+            animationEasing: "easeOutBounce",
+            animationSteps: 150,
+            backgroundColor: "rgba(251, 188, 5, 0.5)",
+            borderColor: "rgba(251, 188, 5, 0.5)",
+            borderWidth: 2.5,
+            borderJoinStyle: "miter",
+            pointBorderColor: "rgba(251, 188, 5, 0.5)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 4,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(251, 188, 5, 1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            hoverBorderWidth: 2,
+        }, {
+          data: [14, 105, 63],
+            label: "2016",
+            fill: false,
+            lineTension: 0.3,
+            responsive: true,
+            animationEasing: "easeOutBounce",
+            animationSteps: 150,
+            backgroundColor: "rgba(52, 168, 83, 0.5)",
+            borderColor: "rgba(52, 168, 83, 0.5)",
+            borderWidth: 2.5,
+            borderJoinStyle: "miter",
+            pointBorderColor: "rgba(52, 168, 83, 0.5)",
+            pointBackgroundColor: "#fff",
+            pointBorderWidth: 4,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: "rgba(52, 168, 83, 1)",
+            pointHoverBorderColor: "rgba(220,220,220,1)",
+            hoverBorderWidth: 2,
+        }]
+    },
+    options: {
+        maintainAspectRatio: true,
+      tooltips: {
+        enabled:true,
+        mode: "label",
+      },
+      hover: {
+         mode: "label"
+      },
+      legend:{
+            display:true,
+            position:"bottom",
+            labels: {
+                boxWidth: 10,
+                padding: 40
+            }
+        },
+      title: {
+            display: false,
+            text: "Programs"
+        },
+      scales: {
+            xAxes: [{
+            stacked: true,
+            ticks: {
+                autoSkip:true,
+                maxTicksLimit:8,
+                fontSize: 25,
+                fontFamily: "Arial"
+            }, 
+              scaleLabel: {
+                display: true,
+                labelString: "Programs"
+              },
+              gridLines: {
+                display: false
+              },
+            }],
+             yAxes: [{
+              stacked: true,
+              ticks: {
+                fontFamily: "Arial"
+              },
+              scaleLabel: {
+                display: true,
+                labelString: "Counts"
+              },
+              gridLines: {
+                display: true
+              }
+            }]
+        }
+    }
+});
+
+</script>
+</div>
+<div>
+    <br>
+    <p id="credit_graph"><strong>SOURCE:</strong> personal Google Takeout; made with chart.js</p>
+</div>
+
+</body>
+</html>
