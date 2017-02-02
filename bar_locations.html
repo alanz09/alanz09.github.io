@@ -155,7 +155,7 @@ var barchart = document.getElementById("myChart");
 var myChart = new Chart(barchart, {
     type: "horizontalBar",
     data: {
-        labels: ["SAS", "SQL", "Excel", "Indesign", "Illustrator", "CSS", "HTML", "Javascript"],
+        labels: ["SAS", "SQL", "excel", "indesign", "illustrator", "CSS", "HTML", "javascript"],
         datasets: [{
           data: [57, 13, 9, 0, 0, 10, 3, 0],
             label: "2014",
@@ -246,7 +246,6 @@ var myChart = new Chart(barchart, {
               scaleLabel: {
                 display: true,
                 labelString: "Programs"
-
               },
               gridLines: {
                 display: false
@@ -254,6 +253,10 @@ var myChart = new Chart(barchart, {
             }],
              yAxes: [{
               stacked: true,
+              ticks: {
+                fontSize: 25,
+                fontFamily: "Arial"
+              },
               scaleLabel: {
                 display: true,
                 labelString: "Counts"
