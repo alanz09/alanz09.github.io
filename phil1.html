@@ -58,7 +58,7 @@ var svg = d3.select("body")
 	.append("g")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("phil.csv", function(error, data) {
+d3.csv("https://raw.githubusercontent.com/alanz09/alanz09.github.io/master/phil.csv", function(error, data) {
 	data.forEach(function(d) {
 		d.year = +d.date;
 		d.avg_feb_pa = +d.avg_feb_pa;
