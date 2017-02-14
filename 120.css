@@ -1,0 +1,165 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+
+
+
+/* ===============================================================
+	CSS 
+	============================================================== */
+
+/* animations */ 
+.wow {
+	font-size: 1em;
+}
+
+/* body */
+body {
+	background-color: #4C4844;
+}
+
+#page {
+	width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+/* title */
+#title {
+	margin: 12% 0px 0px 0px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Source Code Pro', monospace;
+	color: white;
+	padding: 40px 0px;
+	font-size: 7em;
+}
+
+#intro {
+	font-size: 1.5em;
+	text-align: center;
+	width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+	font-family: 'Merriweather', serif;
+	color: #B0C4DE;
+	line-height: 2em;
+}
+
+#full_text {
+	font-size: 1.5em;
+	width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+	font-family: 'Merriweather', serif;
+	color: #B0C4DE;
+	line-height: 2em;
+}
+
+#quotes {
+	font-family: 'Passion One', cursive;
+	font-size: 5em;
+}
+
+#left {
+	text-align: left;
+}
+
+#right {
+	text-align: right;
+}
+
+#bold {
+	font-weight: bold;
+	color: white;
+}
+
+#source {
+	font-size: .5em;
+	text-align: right;
+}
+
+#italic {
+	font-style: italic;
+	color: white;
+}
+
+#questions {
+	font-size: 1.5em;
+	width: 70%;
+	padding-left: 15%;
+	padding-right: 15%;
+	font-family: 'Merriweather', serif;
+	color: #B0C4DE;
+	line-height: 2em;
+}
+
+#q {
+	font-weight: bold;
+	color: white;
+	font-size: 2em;
+}
+
+
+/*
+p {
+	margin-left: 170px;
+	padding: 1em;
+	border: 1px solid red;
+} */
+
+/* pictures and projects */
+
+figure {
+    display: inline-block;
+    margin: 20px; 
+    margin-top: 40px;
+    padding: 1em;
+}
+
+figure img {
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+figure figcaption {
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+}
+
+.amypic {
+	font-family: 'Arimo', sans-serif;
+	font-weight: bold;
+}
+
+a.fig-link:link{
+	color: #000000;
+	text-decoration: none;
+}
+
+a.fig-link:visited{
+	color: #000000;
+	text-decoration: none;
+}
+
+a.fig-link:hover{
+	color: #A9A9A9;
+	text-decoration: none;
+}
+
+img {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 0.2;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+
+
+
+
+
