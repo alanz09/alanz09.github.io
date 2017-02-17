@@ -9,6 +9,7 @@
 
 body {
   font: 12px Arial;
+  border: 1px solid blue;
 }
 
 path { 
@@ -22,9 +23,14 @@ http://bl.ocks.org/mbostock/8033015 -- bostock's voronoi example
 
 http://arnicas.github.io/interactive-vis-course/Week7/multiple_lines_voronoi.html -- best tutorial lady explains it here: http://arnicas.github.io/interactive-vis-course/Week7/#usability-advanced-maneuvers-lines-and-scatters-with-voronoi
 
-http://plnkr.co/edit/iCozxKYF1npTiRd5AjZC?p=preview -- voronoi */
+http://plnkr.co/edit/iCozxKYF1npTiRd5AjZC?p=preview -- voronoi 
 
-.chart {
+
+1. figure out layout for tooltip information
+2. click on "blue line" to get continents + groups*/
+
+svg {
+  border: 1px solid red;
 }
 
 .axis path,
@@ -47,7 +53,7 @@ http://plnkr.co/edit/iCozxKYF1npTiRd5AjZC?p=preview -- voronoi */
 }
 
 div.tooltip { 
-    float: right;     
+    float: left;
     text-align: left;     
     width: 380px;          
     height: 78px;         
@@ -115,228 +121,183 @@ var yAxis = d3.svg.axis()
 // Define the line
 var valueline = d3.svg.line()
     .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.angola); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.angola); });
 
 var valueline2 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.burundi); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.burundi); });
 
 var valueline3 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.CAR); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.CAR); });
 
 var valueline4 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.chad); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.chad); });
 
 var valueline5 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.congo); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.congo); });
 
 var valueline6 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.DEC); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.DEC); });
 
 var valueline7 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.eritrea); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.eritrea); });
 
 var valueline8 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.ethiopia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.ethiopia); });
 
 var valueline9 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.gambia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.gambia); });
 
 var valueline10 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.liberia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.liberia); });
 
 var valueline11 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.mauritania); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.mauritania); });
 
 var valueline12 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.nigeria); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.nigeria); });
 
 var valueline13 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.rwanda); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.rwanda); });
 
 var valueline14 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.sierra_leone); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.sierra_leone); });
 
 var valueline15 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.somalia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.somalia); });
 
 var valueline16 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.sudan); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.sudan); });
 
 var valueline17 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.togo); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.togo); });
 
 var valueline18 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.uganda); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.uganda); });
 
 var valueline19 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.burma); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.burma); });
 
 var valueline20 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.cambodia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.cambodia); });
 
 var valueline21 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.china); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.china); });
 
 var valueline22 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.north_korea); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.north_korea); });
 
 var valueline23 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.laos); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.laos); });
 
 var valueline24 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.vietnam); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.vietnam); });
 
 var valueline25 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.armenia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.armenia); });
 
 var valueline26 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.azerbaijan); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.azerbaijan); });
 
 var valueline27 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.belarus); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.belarus); });
 
 var valueline28 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.georgia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.georgia); });
 
 var valueline29 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.kazakhstan); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.kazakhstan); });
 
 var valueline30 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.kyrgyzstan); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.kyrgyzstan); });
 
 var valueline31 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.moldova); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.moldova); });
 
 var valueline32 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.russia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.russia); });
 
 var valueline33 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.ukraine); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.ukraine); });
 
 var valueline34 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.uzbekistan); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.uzbekistan); });
 
 var valueline35 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.colombia); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.colombia); });
 
 var valueline36 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.cuba); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.cuba); });
 
 var valueline37 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.haiti); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.haiti); });
 
 var valueline38 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.honduras); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.honduras); });
 
 var valueline39 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.afghanistan); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.afghanistan); });
 
 var valueline40 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.bhutan); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.bhutan); });
 
 var valueline41 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.iran); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.iran); });
 
 var valueline42 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.iraq); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.iraq); });
 
 var valueline43 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.pakistan); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.pakistan); });
 
 var valueline44 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.SL); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.SL); });
 
 var valueline45 = d3.svg.line()
   .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.syria); })
-    .interpolate('cardinal');
+    .y(function(d) { return y(d.syria); });
     
 // Adds the svg canvas
 var svg = d3.select("body")
@@ -383,16 +344,17 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
     svg.append("path")
         .attr("class", "line")
         .style("stroke", "grey")
-        .style("stroke-width", 1.5)
+        .style("opacity", 0.7)
         .attr("d", valueline(data))
       .on("mousemove", function(d) {
           div.transition()
             .duration(200)
-            .style("opacity", .9);
+            .style("opacity", 1);
           div.html("<strong>Country: </strong>" + "Angola" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
             .style("stroke", "#FFD700")
-            .style("stroke-width", 2.3);
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
       })
       .on("mouseout", function(d) {
           div.transition()
@@ -400,23 +362,25 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 0);
           d3.select(this)
             .style("stroke", "grey")
-            .style("stroke-width", 1.5);
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
           });
 
     // Add valueline path 2
     svg.append("path")
         .attr("class", "line")
         .style("stroke", "grey")
-        .style("stroke-width", 1.5)
+        .style("opacity", 0.7)
         .attr("d", valueline2(data))
       .on("mousemove", function(d) {
           div.transition()
             .duration(200)
-            .style("opacity", .9);
+            .style("opacity", 1);
           div.html("<strong>Country: </strong>" + "Burundi" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
             .style("stroke", "#FFD700")
-            .style("stroke-width", 2.3);
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
       })
       .on("mouseout", function(d) {
           div.transition()
@@ -424,23 +388,25 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 0);
           d3.select(this)
             .style("stroke", "grey")
-            .style("stroke-width", 1.5);
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
           });
 
     // Add valueline path 3
     svg.append("path")
         .attr("class", "line")
         .style("stroke", "grey")
-        .style("stroke-width", 1.5)
+        .style("opacity", 0.7)
         .attr("d", valueline3(data))
       .on("mousemove", function(d) {
           div.transition()
             .duration(200)
-            .style("opacity", .9);
+            .style("opacity", 1);
           div.html("<strong>Country: </strong>" + "Central African Republic" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
             .style("stroke", "#FFD700")
-            .style("stroke-width", 2.3);
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
       })
       .on("mouseout", function(d) {
           div.transition()
@@ -448,245 +414,25 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 0);
           d3.select(this)
             .style("stroke", "grey")
-            .style("stroke-width", 1.5);
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
           });
 
     // Add valueline path 4
     svg.append("path")
         .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline4(data));
-
-    // Add valueline path 5
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline5(data));
-
-    // Add valueline path 6
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline6(data));
-
-    // Add valueline path 7
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline7(data));
-
-    // Add valueline path 8
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline8(data));
-
-    // Add valueline path 9
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline9(data));
-
-    // Add valueline path 10
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline10(data));
-
-    // Add valueline path 11
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline11(data));
-
-    // Add valueline path 12
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline12(data));
-
-    // Add valueline path 13
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline13(data));
-
-    // Add valueline path 14
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline14(data));
-
-    // Add valueline path 15
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline15(data));
-
-    // Add valueline path 16
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline16(data));
-
-    // Add valueline path 17
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline17(data));
-
-    // Add valueline path 18
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline18(data));
-
-    // Add valueline path 19
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline19(data));
-
-    // Add valueline path 20
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline20(data));
-
-    // Add valueline path 21
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline21(data));
-
-    // Add valueline path 22
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline22(data));
-
-    // Add valueline path 23
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline23(data));
-
-    // Add valueline path 24
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline24(data));
-
-    // Add valueline path 25
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline25(data));
-
-    // Add valueline path 26
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline26(data));
-
-    // Add valueline path 27
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline27(data));
-
-    // Add valueline path 28
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline28(data));
-
-    // Add valueline path 29
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline29(data));
-
-    // Add valueline path 30
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline30(data));
-
-    // Add valueline path 31
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline31(data));
-
-    // Add valueline path 32
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline32(data));
-
-    // Add valueline path 33
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline33(data));
-
-    // Add valueline path 34
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline34(data));
-
-    // Add valueline path 35
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline35(data));
-
-    // Add valueline path 36
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline36(data));
-
-    // Add valueline path 37
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline37(data));
-
-    // Add valueline path 38
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline38(data));
-
-    // Add valueline path 39
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline39(data));
-
-    // Add valueline path 40
-    svg.append("path")
-        .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline40(data));
-
-    // Add valueline path 41
-    svg.append("path")
-        .attr("class", "line")
         .style("stroke", "grey")
-        .style("stroke-width", 1.5)
-        .attr("d", valueline41(data))
-      .on("mousemove", function(d) {
+        .style("opacity", 0.7)
+        .attr("d", valueline4(data))
+        .on("mousemove", function(d) {
           div.transition()
             .duration(200)
-            .style("opacity", .9);
-          div.html("<strong>Country: </strong>" + "Iran" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Chad" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
             .style("stroke", "#FFD700")
-            .style("stroke-width", 2.3);
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
       })
       .on("mouseout", function(d) {
           div.transition()
@@ -694,23 +440,989 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 0);
           d3.select(this)
             .style("stroke", "grey")
-            .style("stroke-width", 1.5);
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 5
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline5(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Congo" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 6
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline6(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Democratic Republic of Congo" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 7
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline7(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Eritrea" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 8
+    svg.append("path")
+        .attr("class", "line")
+        .style("opacity", 0.7)
+        .style("stroke", "grey")
+        .attr("d", valueline8(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Ethiopia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 9
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline9(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Gambia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 10
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline10(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Liberia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 11
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline11(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Mauritania" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 12
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline12(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Nigeria" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 13
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline13(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Rwanda" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 14
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline14(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Sierra Leone" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 15
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline15(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Somalia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 16
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline16(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Sudan" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 17
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline17(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Togo" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 18
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline18(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Uganda" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 19
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline19(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Burma" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 20
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline20(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Cambodia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 21
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline21(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "China" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 22
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline22(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "North Korea" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 23
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline23(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Laos" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 24
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline24(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Vietnam" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 25
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline25(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Armenia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 26
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline26(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Azerbaijan" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 27
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline27(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Belarus" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 28
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline28(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Georgia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 29
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .attr("opacity", 0.7)
+        .attr("d", valueline29(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Kazakhstan" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 30
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .attr("opacity", 0.7)
+        .attr("d", valueline30(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Kyrgyzstan" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+
+    // Add valueline path 31
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .attr("opacity", 0.7)
+        .attr("d", valueline31(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Moldova" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 32
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline32(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Russia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 33
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline33(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Ukraine" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 34
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline34(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Uzbekistan" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 35
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline35(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Colombia" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 36
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline36(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Cuba" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 37
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline37(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Haiti" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 38
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline38(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Honduras" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 39
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline39(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Afghanistan" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 40
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline40(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Bhutan" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
+
+    // Add valueline path 41
+    svg.append("path")
+        .attr("class", "line")
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline41(data))
+      .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>" + "Iran" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
           });
 
     // Add valueline path 42
     svg.append("path")
         .attr("class", "line")
+        .attr("id", "blueLine")
         .style("stroke", "grey")
-        .style("stroke-width", 1.5)
+        .style("opacity", 0.7)
         .attr("d", valueline42(data))
       .on("mousemove", function(d) {
           div.transition()
             .duration(200)
-            .style("opacity", .9);
+            .style("opacity", 1);
           div.html("<strong>Country: </strong>" + "Iraq" + "<br>" + "Population: 36.42M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
             .style("stroke", "#FFD700")
-            .style("stroke-width", 2.3);
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
       }) 
       .on("mouseout", function(d) {
           div.transition()
@@ -718,23 +1430,25 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 0);
           d3.select(this)
             .style("stroke", "grey")
-            .style("stroke-width", 1.5);
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
           });
 
     // Add valueline path 43
     svg.append("path")
         .attr("class", "line")
         .style("stroke", "grey")
-        .style("stroke-width", 1.5)
+        .style("opacity", 0.7)
         .attr("d", valueline43(data))
       .on("mousemove", function(d) {
           div.transition()
             .duration(200)
-            .style("opacity", .9);
+            .style("opacity", 1);
           div.html("<strong>Country: </strong>Pakistan" + "<br>" + "<strong>Population:</strong> 188.92M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/pkout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
             .style("stroke", "#FFD700")
-            .style("stroke-width", 2.3);
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
       })
       .on("mouseout", function(d) {
           div.transition()
@@ -742,20 +1456,61 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 0);
           d3.select(this)
             .style("stroke", "grey")
-            .style("stroke-width", 1.5);
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
           });
 
     // Add valueline path 44
     svg.append("path")
         .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline44(data));
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline44(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>Sri Lanka" + "<br>" + "<strong>Population:</strong> 188.92M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/pkout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
 
     // Add valueline path 45
     svg.append("path")
         .attr("class", "line")
-        .style("stroke", "green")
-        .attr("d", valueline45(data));
+        .style("stroke", "grey")
+        .style("opacity", 0.7)
+        .attr("d", valueline45(data))
+        .on("mousemove", function(d) {
+          div.transition()
+            .duration(200)
+            .style("opacity", 1);
+          div.html("<strong>Country: </strong>Syria" + "<br>" + "<strong>Population:</strong> 188.92M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/pkout.gif style='width: 150px; height: 150px;''>");
+          d3.select(this)
+            .style("stroke", "#FFD700")
+            .style("stroke-width", 2.5)
+            .style("opacity", 1);
+      })
+      .on("mouseout", function(d) {
+          div.transition()
+            .duration(600)
+            .style("opacity", 0);
+          d3.select(this)
+            .style("stroke", "grey")
+            .style("stroke-width", 1.5)
+            .style("opacity", 0.7);
+          });
 
   // Define the div for the tooltip
   var div = d3.select("body").append("div") // TOOLTIP STUFF 
@@ -852,61 +1607,23 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
       .style("text-anchor", "end")
       .text("Year");
 
-   /* svg.append("text") // "March" to end of line
-    .attr("transform", "translate(" + (width+3) + "," + y(data[0].open) + ")")
-    .attr("dy", "3.3em")
-    .attr("dx", "77.5em")
-    .attr("text-anchor", "end")
-    .style("fill", "green")
-    .text("March");
-
-  svg.append("text") // "Feb" to end of line
-    .attr("transform", "translate(" + (width+3) + "," + y(data[0].close) + ")")
-    .attr("dy", "12.3em")
-    .attr("dx", "74.6em")
-    .attr("text-anchor", "start")
-    .style("fill", "steelblue")
-    .text("Feb");
-
-
-      function mouseover(d) {
-        d3.select('.'+d.type).classed("line-hover", true);
-        focus.attr("transform", "translate(" + xScale(d.Year) + "," + yScale(d.number) + ")");
-        focus.select("text").text(d.number);
-      }
-
-      function mouseout(d) {
-        d3.select('.'+d.type).classed("line-hover", false);
-        focus.attr("transform", "translate(-100,-100)");
-      }
-
-  // Dynamic text?
-  var vertical = d3.select("body")
-        .append("div")
-        .attr("class", "remove")
-        .style("position", "absolute")
-        .style("z-index", "19")
-        .style("width", "1px")
-        .style("height", "480px")
-        .style("top", "30px")
-        .style("left", "0px")
-        .style("background", "#000000");
-
-  d3.select("body")
-      .on("mousemove", function(){  
-         mousex = d3.mouse(this);
-         mousex = mousex[0] + 5;
-         vertical.style("left", mousex + "px" )})
-      .on("mouseover", function(){  
-         mousex = d3.mouse(this);
-         mousex = mousex[0] + 5;
-         vertical.style("left", mousex + "px")}); 
-
-        http://bl.ocks.org/WillTurman/4631136*/
-
-      
-
-//});
+    // Add the blue line title
+    svg.append("text")
+      .attr("x", 0)             
+      .attr("y", height + margin.top + 10)    
+      .attr("class", "legend")
+      .style("fill", "steelblue")         
+      .on("click", function(){
+        // Determine if current line is visible
+        var active   = blueLine.active ? false : true,
+          newOpacity = active ? 0 : 0.7,
+          newStroke = active ? "grey" : "pink";
+        // Hide or show the elements
+        d3.select("#blueLine").style("opacity", newOpacity).style("stroke", newStroke);
+        // Update whether or not the elements are active
+        blueLine.active = active;
+      })
+      .text("Blue Line");
 
 </script>
 </div>

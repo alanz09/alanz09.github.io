@@ -67,6 +67,7 @@ p {
 	line-height: 20px;
 }
 
+
 </style>
 
 	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
@@ -384,6 +385,18 @@ data = [{year:"1895",avg_feb:17,avg_mar:31.3},
 		.attr("text-anchor", "start")
 		.style("fill", "steelblue")
 		.text("Feb");
+
+
+      function mouseover(d) {
+        d3.select('.'+d.type).classed("line-hover", true);
+        focus.attr("transform", "translate(" + xScale(d.Year) + "," + yScale(d.number) + ")");
+        focus.select("text").text(d.number);
+      }
+
+      function mouseout(d) {
+        d3.select('.'+d.type).classed("line-hover", false);
+        focus.attr("transform", "translate(-100,-100)");
+      }
 
 	// Dynamic text?
 	/* var vertical = d3.select("body")
