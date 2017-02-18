@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Mukta+Vaani');
+
+body {
+  font: 12px Arial;
+  width: 100%;
+}
+
+.contribution {
+    padding-left: 60px;
+}
+
+path { 
+    stroke: steelblue;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+/* 
+inspiration -- http://nbremer.github.io/urbanization/
+
+http://bl.ocks.org/Matthew-Weber/5645518 -- good line hovers 
+http://bl.ocks.org/mbostock/8033015 -- bostock's voronoi example 
+http://arnicas.github.io/interactive-vis-course/Week7/multiple_lines_voronoi.html -- best tutorial lady explains it here: http://arnicas.github.io/interactive-vis-course/Week7/#usability-advanced-maneuvers-lines-and-scatters-with-voronoi
+http://plnkr.co/edit/iCozxKYF1npTiRd5AjZC?p=preview -- voronoi 
+
+
+http://arnicas.github.io/interactive-vis-course/Week7/multiple_lines_labels_hover.html -- HOVERING OVER LINES
+
+1. figure out layout for tooltip information
+2. click on "blue line" to get continents + groups
+( show hide elements http://bl.ocks.org/d3noob/5d621a60e2d1d02086bf 
+
+
+  /* bar chart example here: http://bl.ocks.org/mstanaland/6100713 
+  https://bl.ocks.org/mbostock/3886208 
+
+  brushing http://duspviz.mit.edu/d3-workshop/transitions-animation/
+
+  http://www.pewresearch.org/fact-tank/2017/01/30/key-facts-about-refugees-to-the-u-s/ -- same chart pew */*/
+
+svg {
+  display: inline-block;
+  width: 75%;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    opacity: 0.2;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.tick text{
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.tick line{
+  opacity: 0.3;
+/* stroke-dasharray: 4,4;*/
+}
+
+img {
+  opacity: 0.6;
+  padding-left: 60px;
+}
+
+div.tooltip { 
+    float: right;
+    text-align: left;     
+    width: 300px;          
+    padding: 10px;  
+    font: 12px sans-serif;
+    background: white; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: all;      
+}
+
+path.domain {
+  stroke: none;
+}
+ 
+.y .tick line {
+  stroke: #ddd;
+}
+
+.top {
+  padding-top: 35px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  color: grey;
+}
+
+.buttons {
+  padding-left: 60px;
+}
+
+a:link {
+    text-decoration: none;
+    color: grey;
+}
+
+a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+}
+
+#title {
+  /* font-family: 'PT Serif', serif; */
+  padding-left: 60px;
+  font-size: 26px;
+  font-family: 'Mukta Vaani', sans-serif;
+  color: black;  
+  text-shadow: 1px 1px grey;
+}
+
+#subtitle {
+  padding-left: 60px;
+  font-size: 16px;
+  font-family: 'Mukta Vaani', sans-serif;
+  color: grey;  
+}
+
+#source {
+  font-size: 12px;
+  color: grey;
+  line-height: 18px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 23px;
+}
