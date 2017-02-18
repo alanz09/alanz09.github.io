@@ -103,6 +103,10 @@ li {
   opacity: 0.3;
 }
 
+.continents {
+  padding-left: 60px;
+}
+
 .buttons {
   padding-left: 60px;
 }
