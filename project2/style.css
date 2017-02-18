@@ -99,6 +99,10 @@ li {
   color: grey;
 }
 
+.opac_li {
+  opacity: 0.3;
+}
+
 .buttons {
   padding-left: 60px;
 }
