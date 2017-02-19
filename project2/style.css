@@ -156,6 +156,12 @@ a:hover {
     color: black;
 }
 
+a:active {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
 /* .svg-container {
     display: inline-block;
     position: relative;
