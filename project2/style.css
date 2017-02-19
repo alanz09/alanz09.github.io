@@ -17,6 +17,11 @@ path {
     fill: none;
 }
 
+#chart {
+  width: 70%;
+  display: inline-block;
+}
+
 /* 
 inspiration -- http://nbremer.github.io/urbanization/
 
@@ -38,12 +43,7 @@ http://arnicas.github.io/interactive-vis-course/Week7/multiple_lines_labels_hove
 
   brushing http://duspviz.mit.edu/d3-workshop/transitions-animation/
 
-  http://www.pewresearch.org/fact-tank/2017/01/30/key-facts-about-refugees-to-the-u-s/ -- same chart pew */*/
-
-svg {
-  display: inline-block;
-  width: 75%;
-}
+  http://www.pewresearch.org/fact-tank/2017/01/30/key-facts-about-refugees-to-the-u-s/ -- same chart pew */
 
 .axis path,
 .axis line {
@@ -70,7 +70,7 @@ img {
 }
 
 div.tooltip { 
-    float: right;
+    display: inline-block;
     text-align: left;     
     width: 300px;          
     padding: 10px;  
@@ -111,22 +111,6 @@ li {
   padding-left: 60px;
 }
 
-a:link {
-    text-decoration: none;
-    color: grey;
-}
-
-a:visited {
-    text-decoration: none;
-    color: grey;
-}
-
-a:hover {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
 #click {
   font-weight: bold;
 }
@@ -153,4 +137,61 @@ a:hover {
   line-height: 18px;
   font-family: 'Lato', sans-serif;
   padding-left: 23px;
+}
+
+/* LINKS */
+a:link {
+    text-decoration: none;
+    color: grey;
+}
+
+a:visited {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+} */
+
+#europe {
+  font-weight: bold;
+  color: black;
+}
+
+#latinam {
+  font-weight: bold;
+  color: black;
+}
+
+#africa {
+  font-weight: bold;
+  color: black;
+}
+
+#asia {
+  font-weight: bold;
+  color: black;
+}
+
+#allcont {
+  font-weight: bold;
+  color: black;
 }

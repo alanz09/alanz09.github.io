@@ -5,15 +5,20 @@ var margin = {top: 0, right: 120, bottom: 55, left: 100};
 var width = 950 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var svg = d3.select("body")
-  .append("svg")
+var svg = d3.select("div#chart")
+ .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
   .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-
-/* Data in strings like it would be if imported from a csv */
+  /*  .append("div")
+   .classed("svg-container", true) //container class to make it responsive
+   .append("svg")
+   //responsive SVG needs these 2 attributes and no width and height attr
+   .attr("preserveAspectRatio", "xMinYMin meet")
+   .attr("viewBox", "0 0 500 300")
+   //class to make it responsive
+   .classed("svg-content-responsive", true);  */
 
 var data = [
 {year: "1975", africa: "0", asia: "135000", europe: "8158", latin_am: "3000"},
@@ -63,14 +68,12 @@ var data = [
 
 var parse = d3.time.format("%Y").parse;
 
-
 // Transpose the data into layers
 var dataset = d3.layout.stack()(["africa", "asia", "europe", "latin_am"].map(function(fruit) {
   return data.map(function(d) {
     return {x: parse(d.year), y: +d[fruit]};
   });
 }));
-
 
 // Set x, y and colors
 var x = d3.scale.ordinal()
@@ -82,7 +85,6 @@ var y = d3.scale.linear()
   .range([height, 0]);
 
 var colors = ["b33040", "#d25c4d", "#f2b447", "#d9d574"];
-
 
 // Define and draw axes
 var yAxis = d3.svg.axis()
@@ -175,7 +177,7 @@ tooltip.append("rect")
   .style("opacity", 0.5);
 
 tooltip.append("text")
-  .attr("x", 15)
+  .attr("x", 25)
   .attr("dy", "1.2em")
   .style("text-anchor", "middle")
   .attr("font-size", "12px")

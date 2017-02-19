@@ -99,7 +99,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
     svg.append("path")
         .attr("class", "line")
         .attr("id", "blueLine")
-        .style("stroke", "blue")
+        .style("stroke", "#b33040")
         .style("opacity", 1)
         .attr("d", valueline35(data))
         .on("mousemove", function(d) {
@@ -117,7 +117,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(600)
             .style("opacity", 0);
           d3.select(this)
-            .style("stroke", "blue")
+            .style("stroke", "#b33040")
             .style("stroke-width", 1.5)
             .style("opacity", 1);
           });
@@ -126,14 +126,14 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
     svg.append("path")
         .attr("class", "line")
         .attr("id", "cuba")
-        .style("stroke", "blue")
+        .style("stroke", "#b33040")
         .style("opacity", 1)
         .attr("d", valueline36(data))
         .on("mousemove", function(d) {
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Cuba" + "<br>" + "<strong>Population:</strong> 11.39M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/caribb/outline/cubaout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Cuba" + "<br>" + "<strong>Population:</strong> 11.39M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/caribb/outline/cubaout.gif style='width: 200px; height: 150px;''>");
           d3.select(this)
             .style("stroke", "#FFD700")
             .style("stroke-width", 2.5)
@@ -144,7 +144,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(600)
             .style("opacity", 0);
           d3.select(this)
-            .style("stroke", "blue")
+            .style("stroke", "#b33040")
             .style("stroke-width", 1.5)
             .style("opacity", 1);
           });
@@ -153,7 +153,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
     svg.append("path")
         .attr("class", "line")
         .attr("id", "haiti")
-        .style("stroke", "blue")
+        .style("stroke", "#b33040")
         .style("opacity", 1)
         .attr("d", valueline37(data))
         .on("mousemove", function(d) {
@@ -171,7 +171,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(600)
             .style("opacity", 0);
           d3.select(this)
-            .style("stroke", "blue")
+            .style("stroke", "#b33040")
             .style("stroke-width", 1.5)
             .style("opacity", 1);
           });
@@ -180,7 +180,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
     svg.append("path")
         .attr("class", "line")
         .attr("id", "honduras")
-        .style("stroke", "blue")
+        .style("stroke", "#b33040")
         .style("opacity", 0.7)
         .attr("d", valueline38(data))
         .on("mousemove", function(d) {
@@ -198,7 +198,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(600)
             .style("opacity", 0);
           d3.select(this)
-            .style("stroke", "blue")
+            .style("stroke", "#b33040")
             .style("stroke-width", 1.5)
             .style("opacity", 1);
           });
@@ -241,11 +241,10 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
       .text("Year");
     </script>
   </div>
-
   <div class="continents">
     <ul>
       <li id="click">Click to view: </li>
-      <li><a href="https://alanz09.github.io/project2/line_countries_latinam">Latin Am + Caribbean | </li>
+      <li><a href="https://alanz09.github.io/project2/line_countries_latinam" id="latinam">Latin Am + Caribbean | </li>
       <li><a href="https://alanz09.github.io/project2/line_countries_africa">Africa | </li> 
       <li><a href="https://alanz09.github.io/project2/line_countries_asia">Asia | </li> 
       <li><a href="https://alanz09.github.io/project2/line_countries_europe">Europe | </li> 
