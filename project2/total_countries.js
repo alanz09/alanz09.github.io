@@ -1,6 +1,6 @@
 // Setup svg using Bostock's margin convention
 
-var margin = {top: 0, right: 120, bottom: 50, left: 100};
+var margin = {top: 0, right: 120, bottom: 55, left: 100};
 
 var width = 950 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;

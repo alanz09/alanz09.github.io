@@ -137,7 +137,7 @@ a:hover {
   font-size: 26px;
   font-family: 'Mukta Vaani', sans-serif;
   color: black;  
-  text-shadow: 1px 1px grey;
+  /* text-shadow: 1px 1px grey; */
 }
 
 #subtitle {
