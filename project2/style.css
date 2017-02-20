@@ -120,7 +120,7 @@ li {
   padding-left: 60px;
   font-size: 26px;
   font-family: 'Mukta Vaani', sans-serif;
-  color: black;  
+  color: #b33040;  
   /* text-shadow: 1px 1px grey; */
 }
 
@@ -180,34 +180,3 @@ a:active {
 #info {
   display: inline-block;
 }
-
-a.latinam {color: #b33040;}
-a.latinam:link  {text-decoration: none; color: #b33040;}
-a.latinam:visited {text-decoration: none; color: #b33040;}
-a.latinam:hover {text-decoration: none; font-weight: bold; color: black;}
-a.latinam:active {text-decoration: none; font-weight: bold; color: black;}
-
-a.africa {color: #d25c4d;}
-a.africa:link  {text-decoration: none; color: #d25c4d;}
-a.africa:visited {text-decoration: none; color: #d25c4d;}
-a.africa:hover {text-decoration: none; font-weight: bold; color: black;}
-a.africa:active {text-decoration: none; font-weight: bold; color: black;}
-
-a.asia {color: #f2b447;}
-a.asia:link  {text-decoration: none; color: #f2b447;}
-a.asia:visited {text-decoration: none; color: #f2b447;}
-a.asia:hover {text-decoration: none; font-weight: bold; color: black;}
-a.asia:active {text-decoration: none; font-weight: bold; color: black;}
-
-a.europe {color: #d9d574;}
-a.europe:link  {text-decoration: none; color: #d9d574;}
-a.europe:visited {text-decoration: none; color: #d9d574;}
-a.europe:hover {text-decoration: none; font-weight: bold; color: black;}
-a.europe:active {text-decoration: none; font-weight: bold; color: black;}
-
-a.all {color: grey;}
-a.all:link  {text-decoration: none; color: grey;}
-a.all:visited {text-decoration: none; color: grey;}
-a.all:hover {text-decoration: none; font-weight: bold; color: black;}
-a.all:active {text-decoration: none; font-weight: bold; color: black;}
-
