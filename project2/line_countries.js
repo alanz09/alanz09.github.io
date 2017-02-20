@@ -258,7 +258,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Angola" + "<br>" + "<strong>Population:</strong> 25.02M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/aoout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this) 
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -285,7 +285,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Burundi" + "<br>" + "<strong>Population:</strong> 11.18M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/biout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -312,7 +312,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Central African Republic" + "<br>" + "<strong>Population:</strong> 4.90M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/cfout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -339,7 +339,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Chad" + "<br>" + "<strong>Population:</strong> 14.04M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/tdout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -366,7 +366,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Congo" + "<br>" + "<strong>Population:</strong> 4.62M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/cgout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -393,7 +393,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Democratic Republic of Congo" + "<br>" + "<strong>Population:</strong> 77.27M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/cdout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -420,7 +420,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Eritrea" + "<br>" + "<strong>Population:</strong> 4.79M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/erout.gif style='width: 150px; height: 150px;''>"); //2011 ******************************************************************************************************
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -447,7 +447,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Ethiopia" + "<br>" + "<strong>Population:</strong> 99.39M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/etout.gif style='width: 150px; height: 150px;''>");
           d3.select(this) //2015
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -474,7 +474,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Gambia" + "<br>" + "<strong>Population:</strong> 1.99M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/gmout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -501,7 +501,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Liberia" + "<br>" + "<strong>Population:</strong> 4.50M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/lrout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -528,7 +528,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Mauritania" + "<br>" + "<strong>Population:</strong> 4.07M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/mrout.gif style='width: 150px; height: 150px;''>");
           d3.select(this) //2015
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -555,7 +555,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Nigeria" + "<br>" + "<strong>Population:</strong> 182.20M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/ngout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -582,7 +582,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Rwanda" + "<br>" + "<strong>Population:</strong> 11.61M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/rwout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -609,7 +609,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Sierra Leone" + "<br>" + "<strong>Population:</strong> 6.45M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/slout.gif style='width: 150px; height: 150px;''>");
           d3.select(this) //2015
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -636,7 +636,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Somalia" + "<br>" + "<strong>Population:</strong> 10.79M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/soout.gif style='width: 150px; height: 150px;''>"); //2015
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -663,7 +663,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Sudan" + "<br>" + "<strong>Population:</strong> 40.23M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/sdout.gif style='width: 150px; height: 150px;''>");
           d3.select(this) //2015
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -690,7 +690,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Togo" + "<br>" + "<strong>Population:</strong> 7.30M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/tgout.gif style='width: 150px; height: 150px;''>");
           d3.select(this) //2015
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -717,7 +717,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Uganda" + "<br>" + "<strong>Population:</strong> 39.03M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/ugout.gif style='width: 150px; height: 150px;''>");
           d3.select(this) //2015
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -744,7 +744,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Myanmar (Burma)" + "<br>" + "<strong>Population:</strong> 53.90M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/mmout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -771,7 +771,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Cambodia" + "<br>" + "<strong>Population:</strong> 15.58M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/khout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -798,7 +798,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>China" + "<br>" + "<strong>Population:</strong> 1.37B" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/cnout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -825,7 +825,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>North Korea" + "<br>" + "<strong>Population:</strong> 25.16M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kp.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -852,7 +852,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Laos" + "<br>" + "<strong>Population:</strong> 6.80M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/laout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -879,7 +879,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Vietnam" + "<br>" + "<strong>Population:</strong> 91.70M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/vnout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -906,7 +906,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Armenia" + "<br>" + "<strong>Population:</strong> 3.02M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/am.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -933,7 +933,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Azerbaijan" + "<br>" + "<strong>Population:</strong> 9.65M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/az.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -960,7 +960,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Belarus" + "<br>" + "<strong>Population:</strong> 9.51M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/by.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -987,7 +987,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Georgia" + "<br>" + "<strong>Population:</strong> 3.68M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/ge.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1014,7 +1014,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Kazakhstan" + "<br>" + "<strong>Population:</strong> 17.54M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kzout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1041,7 +1041,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Kyrgyzstan" + "<br>" + "<strong>Population:</strong> 5.96M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kgout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1069,7 +1069,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Moldova" + "<br>" + "<strong>Population:</strong> 3.55M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/md.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1096,7 +1096,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Russia" + "<br>" + "<strong>Population:</strong> 144.10M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/ruout.gif style='width: 200px; height: 100px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1123,7 +1123,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Ukraine" + "<br>" + "<strong>Population:</strong> 45.20M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/ua.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1150,7 +1150,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Uzbekistan" + "<br>" + "<strong>Population:</strong> 31.30M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/uzout.gif style='width: 150px; height: 200px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1177,7 +1177,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Colombia" + "<br>" + "<strong>Population:</strong> 48.23M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/samerica/outline/co.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1204,7 +1204,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Cuba" + "<br>" + "<strong>Population:</strong> 11.39M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/caribb/outline/cubaout.gif style='width: 200px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1231,7 +1231,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Haiti" + "<br>" + "<strong>Population:</strong> 10.71M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/caribb/outline/ht.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1258,7 +1258,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Honduras" + "<br>" + "<strong>Population:</strong> 8.08M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/camerica/outline/hnoutl.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1285,7 +1285,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Afghanistan" + "<br>" + "<strong>Population:</strong> 32.53M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/afout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1312,7 +1312,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Bhutan" + "<br>" + "<strong>Population:</strong> 774.83K" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/btout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1339,7 +1339,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Iran" + "<br>" + "<strong>Population:</strong> 79.11M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/irout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1368,7 +1368,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>" +
             "<br>" + "Lorem ipsum sldkfjlskjfslkdfjlskdjflskdjflsdkjflskj lskdjflskjdflskjdf lksjdflksjdf lskjdflsjd flksjd flksj dflksjdf lksjdf lksslkdjflsdkfj lsdkjf lsdkfj lsdfj sdlk");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       }) 
@@ -1395,7 +1395,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Pakistan" + "<br>" + "<strong>Population:</strong> 188.92M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/pkout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1422,7 +1422,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Sri Lanka" + "<br>" + "<strong>Population:</strong> 20.97M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/lkout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -1449,7 +1449,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Syria" + "<br>" + "<strong>Population:</strong> 18.50M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/syout.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })

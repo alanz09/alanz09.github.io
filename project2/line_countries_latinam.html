@@ -108,7 +108,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Colombia" + "<br>" + "<strong>Population:</strong> 48.23M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/samerica/outline/co.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -135,7 +135,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Cuba" + "<br>" + "<strong>Population:</strong> 11.39M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/caribb/outline/cubaout.gif style='width: 200px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -162,7 +162,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Haiti" + "<br>" + "<strong>Population:</strong> 10.71M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/caribb/outline/ht.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -189,7 +189,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Honduras" + "<br>" + "<strong>Population:</strong> 8.08M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/camerica/outline/hnoutl.gif style='width: 150px; height: 150px;''>");
           d3.select(this)
-            .style("stroke", "#FFD700")
+            .style("stroke", "black")
             .style("stroke-width", 2.5)
             .style("opacity", 1);
       })
@@ -205,8 +205,8 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
 
   // Define the div for the tooltip
   var div = d3.select("body").append("div") // TOOLTIP STUFF 
-      .attr("class", "tooltip")       
-      .style("opacity", 0);
+      .attr("class", "tooltip")        
+      .style("opacity", 0); 
 
     // Add the X Axis
     svg.append("g")
@@ -241,14 +241,15 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
       .text("Year");
     </script>
   </div>
+  
   <div class="continents">
     <ul>
       <li id="click">Click to view: </li>
-      <li><a href="https://alanz09.github.io/project2/line_countries_latinam" id="latinam">Latin Am + Caribbean | </li>
-      <li><a href="https://alanz09.github.io/project2/line_countries_africa">Africa | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries_asia">Asia | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries_europe">Europe | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries">All Continents</li>
+      <li><a href="https://alanz09.github.io/project2/line_countries_latinam" class="latinam">Latin Am + Caribbean | </li>
+      <li><a href="https://alanz09.github.io/project2/line_countries_africa" class="africa">Africa | </li> 
+      <li><a href="https://alanz09.github.io/project2/line_countries_asia" class="asia">Asia | </li> 
+      <li><a href="https://alanz09.github.io/project2/line_countries_europe" class="europe">Europe | </li> 
+      <li><a href="https://alanz09.github.io/project2/line_countries" class="all">All Continents</li>
     </ul>
   </div>
 
