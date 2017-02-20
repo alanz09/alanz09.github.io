@@ -20,6 +20,7 @@ path {
 #chart {
   width: 70%;
   display: inline-block;
+  border: 1px solid red;
 }
 
 /* 
@@ -120,7 +121,7 @@ li {
   padding-left: 60px;
   font-size: 26px;
   font-family: 'Mukta Vaani', sans-serif;
-  color: #b33040;  
+  color: #d25c4d;  
   /* text-shadow: 1px 1px grey; */
 }
 

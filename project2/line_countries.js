@@ -205,7 +205,7 @@ var valueline45 = d3.svg.line()
     .y(function(d) { return y(d.syria); });
     
 // Adds the svg canvas
-var svg = d3.select("#chart")
+var svg = d3.select("body")
     .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)

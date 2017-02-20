@@ -119,7 +119,8 @@ var groups = svg.selectAll("g.cost")
   .data(dataset)
   .enter().append("g")
   .attr("class", "cost")
-  .style("fill", function(d, i) { return colors[i]; });
+  .style("fill", function(d, i) { return colors[i]; })
+  .style("opacity", 0.9);
 
 var rect = groups.selectAll("rect")
   .data(function(d) { return d; })
@@ -149,7 +150,8 @@ legend.append("rect")
   .attr("x", width - 18)
   .attr("width", 18)
   .attr("height", 18)
-  .style("fill", function(d, i) {return colors.slice().reverse()[i];});
+  .style("fill", function(d, i) {return colors.slice().reverse()[i];})
+  .style("opacity", 0.9);
  
 legend.append("text")
   .attr("x", width + 5)
