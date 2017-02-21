@@ -148,7 +148,7 @@ a:hover{
 	padding-right: 15%;
 }
 
-.chart_title {
+.ctitle {
 	font-size: 1.2em;
 	font-family: 'Merriweather', serif;
 	color: grey;
@@ -163,6 +163,9 @@ a:hover{
 	font-size: .5em;
 	text-align: left;
 	padding-left: 100px;
+	font-family: "Merriweather", serif;
+	color: grey;
+	width: 70%;
 }
 
 div.tooltip { 
