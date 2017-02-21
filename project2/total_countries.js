@@ -160,10 +160,10 @@ legend.append("text")
   .style("text-anchor", "start")
   .text(function(d, i) { 
     switch (i) {
-      case 0: return "Africa";
-      case 1: return "Asia";
-      case 2: return "Europe";
-      case 3: return "Latin America";
+      case 0: return "Latin America";
+      case 1: return "Europe";
+      case 2: return "Asia";
+      case 3: return "Africa";
     }
   });
 
