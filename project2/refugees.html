@@ -2,9 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>120 Days</title>
+		<title>Refugees in the U.S.</title>
 		<link rel="stylesheet" href="120.css"/>
 		<link rel="stylesheet" href="animate.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="parallax.js"></script>
+		<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
 
              <!-- <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
               <script>
@@ -12,34 +15,49 @@
               </script>
               https://daneden.github.io/animate.css/ 
               http://mynameismatthieu.com/WOW/docs.html--> 
+
 	</head>
 
-	<body>		
-	meow
-	<div class="page">
-		<h1 id="title" class="animated fadeInDown">1 2 0 &nbsp;D A Y S</h1>
+<body>		
+
+<!-- first page --> 
+	<div class="textwidth" class="defn">
+		<h1 id="title" class="animated fadeInDown">refugees<br>in the u.s.</h1>
 		<br>
-		<p id="intro" data-wow-duration="12s" class="wow fadeIn">On January 27, 2017, President Donald Trump signed an executive order that suspended all refugee admissions to the United States for 120 days. 
-		<br>This is a look into the President's recent executive order.</p> 
+		<p id="intro" class="animated fadeIn">in today's political climate, the the united states has taken in . this is a look into the country's history of granting </p> 
 		<br>
-		<hr>
 		<br>
 		<br>
 	</div>
-	<div id="full_text" data-wow-duration="5s" class="wow fadeInLeft">
-		<p id="left"><span id="quotes">"</span>The Secretary of State shall suspend the U.S. Refugee Admissions Program (USRAP) for 120 days. During the 120-day period, the Secretary of State ... shall review the USRAP application and adjudication process ... <span id="bold">to ensure that those approved for refugee admission do not pose a threat to the security and welfare of the United States,</span> and shall implement such additional procedures. </p>
-		<p id="right">...I hereby proclaim that the <span id="bold">immigrant and nonimmigrant entry into the United States of aliens from countries referred to in section 217(a)(12) of the INA, 8 U.S.C. 1187(a)(12), would be detrimental to the interests of the United States, and I hereby suspend entry</span> ... of such persons for 90 days from the date of this order.</p>
-		<p id="source">Source: Executive order <span id="italic">Protecting the Nation From Foreign Terrorist Entry Into the United States.</span></p>
+	
+	<p class="parallax-window" data-parallax="scroll" data-image-src="http://www.usnews.com/dims4/USNEWS/56ebb9c/2147483647/resize/970x/quality/85/?url=%2Fcmsmedia%2F7a%2F35%2F9ea8e2db4827bc305e3d365c47ad%2F150108-editorial.jpg" id="left"></p>
+	
 
-		<!-- https://www.nytimes.com/2017/01/27/us/politics/refugee-muslim-executive-order-trump.html
+<!-- second page --> 
+	<div id="img1" class="animated fadeInDown">	
+		<img src="http://i1352.photobucket.com/albums/q643/alanz09/map_yellow_zpstkoa5ae5.png">
+	</div>
+	<br>
+	<div>
+		<p id="left" class="full_text"><span id="quotes">"</span>a refugee is someone who has been forced to flee his or her country because of persecution, war, or violence... [and] has a well-founded fear of persecution for reasons of <span id="bold">race, religion, nationality, political opinion, or membership in a particular social group.</span> most likely, they cannot return home or are afraid to do so.</p>
+		<p id="source" class="full_text">Source: <a href="http://www.unrefugees.org/what-is-a-refugee/">The UN Refugee Agency</a></p>
+		<br><br>
+		<div class="full_text">
+			<hr>
+		</div>
+	</div>
 
-				... I hereby proclaim that <span id="bold">the entry of nationals of Syria as refugees is detrimental to the interests of the United States and thus suspend any such entry</span> until such time as I have determined that sufficient changes have been made to the USRAP to ensure that admission of Syrian refugees is consistent with the national interest.
+		<!-- Image 1 link: http://www.usnews.com/dims4/USNEWS/56ebb9c/2147483647/resize/970x/quality/85/?url=%2Fcmsmedia%2F7a%2F35%2F9ea8e2db4827bc305e3d365c47ad%2F150108-editorial.jpg
 		 --> 
-		<br>
-		<br>
-		<hr>
-	</div>
+
+<!-- bar chart --> 
+	<br><br>
 	<div id="questions" class = "wow fadeInDown">
+		 <div id="chart">    
+    		<script src="total_countries.js"></script>
+  		</div>
+
+
 		<p><span id="bold">QUESTION:</span> What does the history of refugees coming to the US look like?</p>
 	</div>
 
