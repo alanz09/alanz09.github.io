@@ -163,9 +163,11 @@ a:hover{
 	font-size: .5em;
 	text-align: left;
 	padding-left: 100px;
-	font-family: "Merriweather", serif;
+	font-family: 'Merriweather', serif;
 	color: grey;
 	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 div.tooltip { 
