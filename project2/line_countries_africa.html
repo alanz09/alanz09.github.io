@@ -290,7 +290,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
         .attr("class", "line")
         .attr("id", "demRepCongo")
         .style("stroke", "#d25c4d")
-        .style("opacity", 0.7)
+        .style("opacity", 1)
         .attr("d", valueline6(data))
         .on("mousemove", function(d) {
           div.transition()
@@ -309,7 +309,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           d3.select(this)
             .style("stroke", "#d25c4d")
             .style("stroke-width", 1.5)
-            .style("opacity", 0.7);
+            .style("opacity", 1);
           });
 
     // Add valueline path 7

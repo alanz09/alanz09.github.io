@@ -5,10 +5,27 @@
 body {
   font: 12px Arial;
   width: 100%;
+    /*  display: inline-block;
+    margin: 0px auto;
+    text-align: center; */
+    padding: 20px;
+}
+
+svg {
 }
 
 .contribution {
     padding-left: 60px;
+}
+
+#good {
+  display: inline-block;
+}
+
+.navigation {
+  display: inline-block;
+  margin-bottom: 20px;
+
 }
 
 path { 
@@ -18,12 +35,17 @@ path {
 }
 
 #chart {
-  width: 70%;
   display: inline-block;
-  border: 1px solid red;
 }
 
 /* 
+MAKE LEGEND IN ILLUSTRATOR
+MAKE SOURCES NOT AS DARK
+APPEND TEXT TO RIGHT THAT ACTS ON LOAD 
+
+
+
+
 inspiration -- http://nbremer.github.io/urbanization/
 
 http://bl.ocks.org/Matthew-Weber/5645518 -- good line hovers 
@@ -92,6 +114,7 @@ path.domain {
 
 .top {
   padding-top: 35px;
+  display: inline-block;
 }
 
 li {
