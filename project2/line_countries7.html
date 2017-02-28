@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+    <link href="style.css" rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
+  <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
+  
+  <div id="chart">
+    <script src="line_countries_7.js"></script>
+  </div>
+
+  <div class="continents">
+    <ul>
+      <li id="click">Click to view: </li>
+      <li><a href="https://alanz09.github.io/project2/line_countries_latinam" class="latinam">Latin Am + Caribbean | </li>
+      <li><a href="https://alanz09.github.io/project2/line_countries_africa" class="africa">Africa | </li> 
+      <li><a href="https://alanz09.github.io/project2/line_countries_asia" class="asia">Asia | </li> 
+      <li><a href="https://alanz09.github.io/project2/line_countries_europe" class="europe">Europe | </li> 
+      <li><a href="https://alanz09.github.io/project2/line_countries" class="all">All Continents</li>
+    </ul>
+  </div>
+
+  <div class="buttons">
+    <ul>
+      <li><a href="https://alanz09.github.io/project2/total_countries">back</li>
+      &nbsp;&nbsp;
+      <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;</li> <!-- TITLE PAGE --> 
+      &nbsp;&nbsp;
+      <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;</li> <!-- total_countries bar chart -->
+      &nbsp;&nbsp;
+      <li><a href="#">&#x25FC;</li> <!-- interactive line chart -->
+      &nbsp;&nbsp;
+      <li><a href="#">next</li>
+    </ul>
+  </div>
+
+  <div class="contribution">
+    <p id="source">Countries whose data was withheld to limit disclosure for 1 year or more were excluded from this analysis. Represented by (D) in source database.
+    <br>
+    <strong>SOURCE:</strong> U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS), The World Bank, World Atlas</p>
+  </div>
+
+</body>
+</html>

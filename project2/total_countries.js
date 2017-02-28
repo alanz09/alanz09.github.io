@@ -185,23 +185,45 @@ tooltip.append("text")
   .attr("font-size", "12px")
   .attr("font-weight", "bold");
 
-    // Styling text 
-    svg.append("g") // Label on Y axis
-      .attr("class", "y axis")
-      .call(yAxis)
-      .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", -70)
-      .attr("x", -170)
-      .attr("dy", ".61em")
-      .style("text-anchor", "end")
-      .text("Refugees (in thousands)");
+// Styling text 
+svg.append("g") // Label on Y axis
+  .attr("class", "barLabel")
+  .call(yAxis)
+  .append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", -70)
+  .attr("x", -170)
+  .attr("dy", ".61em")
+  .style("text-anchor", "end")
+  .text("Refugees (in thousands)");
 
-    svg.append("g") // Label on X axis
-      .attr("class", "x axis")
+svg.append("g") // Label on X axis
+  .attr("class", "barLabel")
+  .append("text")
+  .attr("transform", "translate(0," + height + ")")
+  .attr("y", 55)
+  .attr("x", 370)
+  .style("text-anchor", "end")
+  .text("Year");
+
+// Add fade-in text element 
+  svg.append("g") // Label for 1951
+      .attr("class", "animated fadeIn first")
       .append("text")
       .attr("transform", "translate(0," + height + ")")
-      .attr("y", 55)
-      .attr("x", 370)
+      .attr("y", -300)
+      .attr("x", 480)
       .style("text-anchor", "end")
-      .text("Year");
+      .html("&#x2190 The 1951 Refugee Convention first defined the term 'refugee'");
+
+  svg.append("g")
+      .attr("class", "animated fadeIn first")
+      .append("text")
+      .attr("transform", "translate(0," + height + ")")
+      .attr("y", -280)
+      .attr("x", 480)
+      .style("text-anchor", "end")
+      .html(" as well as the rights of individuals");
+
+
+

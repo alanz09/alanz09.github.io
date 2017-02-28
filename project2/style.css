@@ -12,6 +12,8 @@ body {
 }
 
 svg {
+    margin: 0px auto;
+    text-align: center;
 }
 
 .contribution {
