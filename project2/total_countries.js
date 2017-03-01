@@ -207,7 +207,7 @@ svg.append("g") // Label on X axis
   .text("Year");
 
 // Add fade-in text element 
-  svg.append("g") // Label for 1951
+/*  svg.append("g") // Label for 1951
       .attr("class", "animated fadeIn first")
       .append("text")
       .attr("transform", "translate(0," + height + ")")
@@ -223,7 +223,7 @@ svg.append("g") // Label on X axis
       .attr("y", -280)
       .attr("x", 480)
       .style("text-anchor", "end")
-      .html(" as well as the rights of individuals");
+      .html(" as well as the rights of individuals"); */
 
 
 

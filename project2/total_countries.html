@@ -3,41 +3,52 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
     <link href="style.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="animate.css"/>
 </head>
 
 <body>
-  <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
-  <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
-<br>
-  <div id="chart">    
-    <script src="total_countries.js"></script>
+
+<!-- TOP TITLE -->
+<div id="all">
+    <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
+    <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
+</div>
+
+<!-- LEFT --> 
+  <div id="left">
+      <div class="buttons">
+        <ul>
+          <li><a href="https://alanz09.github.io/project2/refugees_title">back</li> <!-- opaque here --> 
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;&nbsp;&nbsp; home</li> <!-- TITLE PAGE --> 
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FC;&nbsp;&nbsp; <strong>bar | by region</strong></li> <!-- total_countries bar chart -->
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/line_countries">&#x25FB;&nbsp;&nbsp; line | by country</li>
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;&nbsp;&nbsp; line | 7 country ban</li>
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/total_countries">next</li>
+        </ul>
+      </div>
   </div>
-  <div id="good">
-    hello this is improtant
+
+<!-- MIDDLE -->
+  <div id="middle">
+    <div id="chart" class="animated fadeIn">    
+      <script src="total_countries.js"></script>
+    </div>
   </div>
 
-  <br><br><br>
-
-  <div class="buttons">
-    <ul>
-      <li><a href="https://alanz09.github.io/project2/refugees_title">back</li>
-      &nbsp;&nbsp;
-      <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;</li> <!-- TITLE PAGE --> 
-      &nbsp;&nbsp;
-      <li><a href="#">&#x25FC;</li> <!-- total_countries bar chart -->
-      &nbsp;&nbsp;
-      <li><a href="https://alanz09.github.io/project2/line_countries">&#x25FB;</li> <!-- interactive line chart --> 
-      &nbsp;&nbsp;
-      <li><a href="https://alanz09.github.io/project2/line_countries">next</li> 
-    </ul>
+<!-- RIGHT --> 
+  <div id="right">
   </div>
 
-
-  <div class="contribution">
+  <!--<div class="contribution">
     <p id="source">NOTE: Region counts based on the nationality of the principle applicant. Asia includes Amerasian immigrants and Europe includes regions of the Former Soviet Union.
     <br>
     <strong>SOURCE:</strong> U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS)</p>
-  </div>
+  </div> --> 
 
 </body>
 </html>

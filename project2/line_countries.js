@@ -256,7 +256,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Angola" + "<br>" + "<strong>Population:</strong> 25.02M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/aoout.gif style='width: 150px; height: 150px;''>"); //2015
+          div.html("<strong>Country: </strong>Angola" + "<br>" + "<strong>Population:</strong> 25.02M" + "<br><br><br>" /*+ "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/aoout.gif style='width: 150px; height: 150px;''>"*/); //2015
           d3.select(this) 
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -1496,7 +1496,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
       .append("text")
       .attr("transform", "translate(0," + height + ")")
       .attr("y", 45)
-      .attr("x", 480)
+      .attr("x", 430)
       .style("text-anchor", "end")
       .text("Year");
 

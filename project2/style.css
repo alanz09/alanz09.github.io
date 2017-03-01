@@ -2,51 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Mukta+Vaani');
 
-body {
-  font: 12px Arial;
-  width: 100%;
-    /*  display: inline-block;
-    margin: 0px auto;
-    text-align: center; */
-    padding: 20px;
-}
-
-svg {
-    margin: 0px auto;
-    text-align: center;
-}
-
-.contribution {
-    padding-left: 60px;
-}
-
-#good {
-  display: inline-block;
-}
-
-.navigation {
-  display: inline-block;
-  margin-bottom: 20px;
-
-}
-
-path { 
-    stroke: steelblue;
-    stroke-width: 1.5;
-    fill: none;
-}
-
-#chart {
-  display: inline-block;
-}
-
 /* 
 MAKE LEGEND IN ILLUSTRATOR
 MAKE SOURCES NOT AS DARK
 APPEND TEXT TO RIGHT THAT ACTS ON LOAD 
-
-
-
 
 inspiration -- http://nbremer.github.io/urbanization/
 
@@ -70,6 +29,149 @@ http://arnicas.github.io/interactive-vis-course/Week7/multiple_lines_labels_hove
 
   http://www.pewresearch.org/fact-tank/2017/01/30/key-facts-about-refugees-to-the-u-s/ -- same chart pew */
 
+/* LAYOUT ================================================================================ */
+
+body {
+  font: 12px Arial;
+  padding: 20px;
+}
+
+#left {
+  width: 13%;
+  float: left;
+}
+
+#middle {
+  width: 65%;
+  float: left;
+}
+
+#right {
+  width: 17%;
+  float: left;
+}
+
+#all {
+  width: 100%;
+}
+
+.contribution {
+    padding-left: 60px;
+}
+
+/* NAV ================================================================================ */
+
+li {
+  list-style: none;
+  /* display: inline-block; */
+  color: dimgrey;
+}
+
+#opac_li {
+  opacity: 0.3;
+}
+
+.buttons {
+  display: inline;
+}
+
+ul {
+  /* padding-top: 120px; */
+}
+
+#click {
+  font-weight: bold;
+}
+
+/* TEXT ================================================================================ */
+
+.top {
+  padding-top: 10px;
+  display: inline-block;
+}
+
+#title {
+  /* font-family: 'PT Serif', serif; */
+  padding-left: 30px;
+  font-size: 28px;
+  font-family: 'Mukta Vaani', sans-serif;
+  color: #d25c4d;  
+  /* text-shadow: 1px 1px grey; */
+}
+
+#subtitle {
+  padding-left: 30px;
+  font-size: 16px;
+  font-family: 'Mukta Vaani', sans-serif;
+  color: grey;  
+}
+
+#source {
+  font-size: 12px;
+  color: grey;
+  line-height: 18px;
+  font-family: 'Lato', sans-serif;
+  padding-left: 23px;
+}
+
+#title_text {
+  font-size: 23px;
+  font-family: 'Mukta Vaani', sans-serif;
+  padding-left: 145px;
+  color: #1a1a1a;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+}
+
+#title_text2 {
+  font-size: 23px;
+  font-family: 'Mukta Vaani', sans-serif;
+  padding-left: 145px;
+  color: #1a1a1a;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+}
+
+#start {
+  font-size: 14px;
+  font-family: 'Mukta Vaani', sans-serif;
+  padding-left: 800px;
+  color: #1a1a1a;
+  animation-duration: 4s;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+}
+
+/* CHART ================================================================================ */
+
+svg {
+    margin: 0px auto;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+path { 
+    stroke: steelblue;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+#chart2 {
+  float: left;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+#bar {
+  float: left;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
 .axis path,
 .axis line {
     fill: none;
@@ -89,15 +191,10 @@ http://arnicas.github.io/interactive-vis-course/Week7/multiple_lines_labels_hove
 /* stroke-dasharray: 4,4;*/
 }
 
-img {
-  opacity: 0.6;
-  padding-left: 60px;
-}
-
 div.tooltip { 
     display: inline-block;
     text-align: left;     
-    width: 300px;          
+    width: 220px;          
     padding: 10px;  
     font: 12px sans-serif;
     background: white; 
@@ -114,61 +211,11 @@ path.domain {
   stroke: #ddd;
 }
 
-.top {
-  padding-top: 35px;
-  display: inline-block;
-}
+/* LINKS ETC ================================================================================ */
 
-li {
-  list-style: none;
-  display: inline-block;
-  color: grey;
-}
-
-.opac_li {
-  opacity: 0.3;
-}
-
-.continents {
-  padding-left: 60px;
-}
-
-.buttons {
-  padding-left: 60px;
-}
-
-#click {
-  font-weight: bold;
-}
-
-#title {
-  /* font-family: 'PT Serif', serif; */
-  padding-left: 60px;
-  font-size: 26px;
-  font-family: 'Mukta Vaani', sans-serif;
-  color: #d25c4d;  
-  /* text-shadow: 1px 1px grey; */
-}
-
-#subtitle {
-  padding-left: 60px;
-  font-size: 16px;
-  font-family: 'Mukta Vaani', sans-serif;
-  color: grey;  
-}
-
-#source {
-  font-size: 12px;
-  color: grey;
-  line-height: 18px;
-  font-family: 'Lato', sans-serif;
-  padding-left: 23px;
-}
-
-/* LINKS */
 a:link {
     text-decoration: none;
-    color: grey;
+    color: lightgrey;
 }
 
 a:visited {
@@ -178,7 +225,6 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    font-weight: bold;
     color: black;
 }
 
@@ -188,21 +234,15 @@ a:active {
   color: black;
 }
 
-/* .svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    vertical-align: top;
-    overflow: hidden;
+img.background {
+  position: absolute;
+  z-index: -1;
 }
-.svg-content-responsive {
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    left: 0;
-} */
 
 #info {
+  display: inline-block;
+}
+
+#good {
   display: inline-block;
 }

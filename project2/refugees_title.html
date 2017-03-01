@@ -2,36 +2,60 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="animate.css"/>
     <link href="style.css" rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
-  <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
 
-  <div>
-    <img id="background" src="http://i1352.photobucket.com/albums/q643/alanz09/map_yellow_zpstkoa5ae5.png" style="width: 932px; height: 463px;">
+<!-- TOP TITLE -->
+<div id="all">
+    <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
+    <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
+</div>
+
+<!-- LEFT --> 
+  <div id="left">
+      <div class="buttons">
+        <ul>
+          <li id="opac_li"><a href="https://alanz09.github.io/project2/refugees_title">back</li> <!-- opaque here -->
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FC;&nbsp;&nbsp; <strong>home</strong></li> <!-- TITLE PAGE --> 
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;&nbsp;&nbsp; bar | by region</li> <!-- total_countries bar chart -->
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/line_countries">&#x25FB;&nbsp;&nbsp; line | by country</li>
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;&nbsp;&nbsp; line | 7 country ban</li>
+          &nbsp;&nbsp;
+          <div id="box"><li><a href="https://alanz09.github.io/project2/total_countries">next</li></div>
+        </ul>
+      </div>
   </div>
 
-	<br><br><br><br>
+<!-- MIDDLE -->
+  <div id="middle">
+      <!--<p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
+      <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>--> 
 
-  <div class="buttons">
-  	<ul>
-  		<li class="opac_li">back</li> <!-- opaque here --> 
-  		&nbsp;&nbsp;
-  		<li><a href="#">&#x25FC;</li> <!-- TITLE PAGE --> 
-  		&nbsp;&nbsp;
-  		<li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;</li> <!-- total_countries bar chart -->
-  		&nbsp;&nbsp;
-  		<li><a href="https://alanz09.github.io/project2/line_countries">&#x25FB;</li>
-  		&nbsp;&nbsp;
-  		<li><a href="https://alanz09.github.io/project2/total_countries">start</li>
-  	</ul>
+      <div>
+        <img class="background" src="http://i1352.photobucket.com/albums/q643/alanz09/map_opaque_zpslazpyfje.png" style="width: 932px; height: 463px;">
+      </div>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <div>
+        <span id="title_text" class="animated fadeIn">&nbsp;&nbsp;The United States has resettled more than 3 million people since 1975.</span> <span id="title_text2" class="animated fadeIn">This is a look into the country's history of welcoming refugees over time.</span><br><span id="start" class="animated fadeIn">start</span>
+      </div>
+     <!-- <div class="contribution">
+        <p id="source">Countries whose data was withheld to limit disclosure for 1 year or more were excluded from this analysis. Represented by (D) in source database.
+        <br>
+        <strong>SOURCE:</strong> U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS)<br> Additional sources: <br> Population - World Bank</p>
+      </div> -->
   </div>
-  <div class="contribution">
-    <p id="source">Countries whose data was withheld to limit disclosure for 1 year or more were excluded from this analysis. Represented by (D) in source database.
-    <br>
-    <strong>SOURCE:</strong> U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS)<br> Additional sources: <br> Population - World Bank</p>
+
+<!-- RIGHT --> 
+  <div id="right">
   </div>
 
 </body>

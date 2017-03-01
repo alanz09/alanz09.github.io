@@ -1,10 +1,9 @@
 
 <!DOCTYPE html>
-<!-- Modification of an example by Scott Murray from Knight D3 course -->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Line Chart with Multiple Lines</title>
+		<title>Refugees in the US</title>
 		<style type="text/css">
 
 			body {
@@ -70,14 +69,13 @@
 	</head>
 	<body>
 
-		<h1>CO2 Emissions by Country With Hover</h1>
+		<h1>Refugees in the U.S.</h1>
 
-		<p>Carbon dioxide emissions, 1961-2010. Data not available for the entire period for all countries. Source: <a href="http://data.worldbank.org/indicator/EN.ATM.CO2E.KT?page=6">World Bank</a>, 2014. (Based on a modified example from Scott Murray.)</p>
-		<p>This version of the interactive uses the technique in <a href="http://www.nytimes.com/interactive/2016/01/12/upshot/david-bowie-songs-that-fans-are-listening-most-heroes-starman-major-tom.html?_r=0">this NYT David Bowie songs line chart</a> to highlight lines and labels beside the line on mouseover.
+		<p>A look into the origin of refugees entering the United States.</p>
+		<p>Hello
 		</p>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 		<script type="text/javascript">
-
 
 			//Dimensions and padding
 			var fullwidth = 950;
@@ -115,9 +113,7 @@
 							.outerTickSize([0]);
 
 
-
 			//Configure line generator
-			// each line dataset must have a d.year and a d.amount for this to work.
 			var line = d3.svg.line()
 				.x(function(d) {
 					return xScale(dateFormat.parse(d.year));
@@ -127,7 +123,6 @@
 				});
 
 
-
 			//Create the empty SVG image
 			var svg = d3.select("body")
 						.append("svg")
@@ -135,7 +130,6 @@
 						.attr("height", fullheight)
 						.append("g")
 						.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
 
 			var tooltip = d3.select("body")
 		      	.append("div")
@@ -183,13 +177,6 @@
 						} );
 
 				});
-
-				//Uncomment to log the original data to the console
-				// console.log(data);
-
-				//Uncomment to log the newly restructured dataset to the console
-				//console.log(dataset);
-
 
 				//Set scale domains - max and mine of the years
 				xScale.domain(
@@ -288,8 +275,6 @@
 			  }
 
 			});
-
-
 
 		</script>
 
