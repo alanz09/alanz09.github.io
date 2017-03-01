@@ -117,7 +117,7 @@ ul {
 #title_text {
   font-size: 23px;
   font-family: 'Mukta Vaani', sans-serif;
-  padding-left: 145px;
+  padding-left: 135px;
   color: #1a1a1a;
   animation-duration: 4s;
   animation-delay: 1s;
@@ -127,7 +127,7 @@ ul {
 #title_text2 {
   font-size: 23px;
   font-family: 'Mukta Vaani', sans-serif;
-  padding-left: 145px;
+  padding-left: 135px;
   color: #1a1a1a;
   animation-duration: 4s;
   animation-delay: 4s;
@@ -158,11 +158,13 @@ path {
     fill: none;
 }
 
-#chart2 {
+#chart {
   float: left;
+  position: relative;
   animation-duration: 5s;
-  animation-delay: 0s;
+  animation-delay: 2s;
   animation-iteration-count: 1;
+  z-index: -1;
 }
 
 #bar {
@@ -209,6 +211,18 @@ path.domain {
  
 .y .tick line {
   stroke: #ddd;
+}
+
+/* BAR CHART TEXT ================================================================================ */
+
+#introbar {
+  font-size: 23px;
+  font-family: 'Mukta Vaani', sans-serif;
+  padding-left: 300px;
+  color: #1a1a1a;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
 }
 
 /* LINKS ETC ================================================================================ */
