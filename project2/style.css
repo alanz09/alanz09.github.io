@@ -61,10 +61,6 @@ body {
   margin: 0px auto;
 }
 
-.contribution {
-    padding-left: 60px;
-}
-
 /* NAV ================================================================================ */
 
 li {
@@ -78,6 +74,10 @@ li {
 }
 
 .buttons {
+  display: inline;
+}
+
+li.clickcount {
   display: inline;
 }
 
@@ -168,7 +168,9 @@ ul {
 }
 
 #greytext {
-  color: grey;
+  font-size: 14px;
+  color: grey;  
+  line-height: 20px;
 }
 
 

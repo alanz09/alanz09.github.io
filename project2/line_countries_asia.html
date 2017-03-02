@@ -6,9 +6,34 @@
 </head>
 
 <body>
-  <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
-  <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
 
+<!-- TOP TITLE -->
+<div id="all">
+    <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
+    <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
+</div>
+
+<!-- LEFT --> 
+  <div id="left">
+      <div class="buttons">
+        <ul>
+          <li><a href="https://alanz09.github.io/project2/total_countries" style="font-size: 18px">back</a></li> <!-- opaque here --> 
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;&nbsp;&nbsp; home</a></li> <!-- TITLE PAGE --> 
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;&nbsp;&nbsp; bar | by region</a></li> <!-- total_countries bar chart -->
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/line_countries">&#x25FC;&nbsp;&nbsp; <strong>line | by country</strong></a></li>
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/line_countries7">&#x25FB;&nbsp;&nbsp; line | 7 country ban</a></li>
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/line_countries7" style="font-size: 18px">next</a></li>
+        </ul>
+      </div>
+  </div>
+
+<!-- MIDDLE -->
+  <div id="middle">
   <div class="chart">
     <script>
     
@@ -142,7 +167,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Myanmar (Burma)" + "<br>" + "<strong>Population:</strong> 53.90M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/mmout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Myanmar (Burma)" + "<br>" + "<strong>Population:</strong> 53.90M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/mmout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -169,7 +194,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Cambodia" + "<br>" + "<strong>Population:</strong> 15.58M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/khout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Cambodia" + "<br>" + "<strong>Population:</strong> 15.58M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/khout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -196,7 +221,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>China" + "<br>" + "<strong>Population:</strong> 1.37B" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/cnout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>China" + "<br>" + "<strong>Population:</strong> 1.37B" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/cnout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -223,7 +248,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>North Korea" + "<br>" + "<strong>Population:</strong> 25.16M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kp.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>North Korea" + "<br>" + "<strong>Population:</strong> 25.16M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kp.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -250,7 +275,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Laos" + "<br>" + "<strong>Population:</strong> 6.80M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/laout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Laos" + "<br>" + "<strong>Population:</strong> 6.80M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/laout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -277,7 +302,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Vietnam" + "<br>" + "<strong>Population:</strong> 91.70M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/vnout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Vietnam" + "<br>" + "<strong>Population:</strong> 91.70M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/vnout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -304,7 +329,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Afghanistan" + "<br>" + "<strong>Population:</strong> 32.53M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/afout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Afghanistan" + "<br>" + "<strong>Population:</strong> 32.53M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/afout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -331,7 +356,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Bhutan" + "<br>" + "<strong>Population:</strong> 774.83K" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/btout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Bhutan" + "<br>" + "<strong>Population:</strong> 774.83K" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/btout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -358,7 +383,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Iran" + "<br>" + "<strong>Population:</strong> 79.11M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/irout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Iran" + "<br>" + "<strong>Population:</strong> 79.11M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/irout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -386,8 +411,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(200)
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Iraq" + "<br>" + "<strong>Population:</strong> 36.42M" + "<br><br><br>" + 
-            "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>" +
-            "<br>" + "Lorem ipsum sldkfjlskjfslkdfjlskdjflskdjflsdkjflskj lskdjflskjdflskjdf lksjdflksjdf lskjdflsjd flksjd flksj dflksjdf lksjdf lksslkdjflsdkfj lsdkjf lsdkfj lsdfj sdlk");
+            "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/iqout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -414,7 +438,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Pakistan" + "<br>" + "<strong>Population:</strong> 188.92M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/pkout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Pakistan" + "<br>" + "<strong>Population:</strong> 188.92M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/pkout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -441,7 +465,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Sri Lanka" + "<br>" + "<strong>Population:</strong> 20.97M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/lkout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Sri Lanka" + "<br>" + "<strong>Population:</strong> 20.97M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/lkout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -468,7 +492,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Syria" + "<br>" + "<strong>Population:</strong> 18.50M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/syout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Syria" + "<br>" + "<strong>Population:</strong> 18.50M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/syout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -522,36 +546,25 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
       .text("Year");
     </script>
   </div>
-
-  <div class="continents">
-    <ul>
-      <li id="click">Click to view: </li>
-      <li><a href="https://alanz09.github.io/project2/line_countries_latinam" class="latinam">Latin Am + Caribbean | </li>
-      <li><a href="https://alanz09.github.io/project2/line_countries_africa" class="africa">Africa | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries_asia" class="asia">Asia | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries_europe" class="europe">Europe | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries" class="all">All Continents</li>
-    </ul>
   </div>
 
-  <div class="buttons">
-    <ul>
-      <li><a href="https://alanz09.github.io/project2/total_countries">back</li>
-      &nbsp;&nbsp;
-      <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;</li> <!-- TITLE PAGE --> 
-      &nbsp;&nbsp;
-      <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;</li> <!-- total_countries bar chart -->
-      &nbsp;&nbsp;
-      <li><a href="#">&#x25FC;</li> <!-- interactive line chart -->
-      &nbsp;&nbsp;
-      <li><a href="#">next</li>
-    </ul>
-  </div>
+  <!-- bottom -->
+  <div id="bottom1">
+    <p class="linetext animated fadeIn"><strong>Hover over the lines to learn about the incoming refugee population by country of origin, or click below to view by region.</strong><br></p>
 
-  <div class="contribution">
-    <p id="source">Countries whose data was withheld to limit disclosure for 1 year or more were excluded from this analysis. Represented by (D) in source database.
-    <br>
-    <strong>SOURCE:</strong> U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS)<br> Additional sources: <br> Population - World Bank</p>
+    <div>
+        <ul>
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries_latinam" class="latinam">Latin Am + Caribbean | </a></li>
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries_africa" class="africa">Africa | </a></li> 
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries_asia" class="asia"><strong>Asia | </strong></a></li> 
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries_europe" class="europe">Europe | </a></li> 
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries" class="all">All Regions</a></li>
+        </ul>
+    </div>
+
+    <div class="contribution">
+        <p id="source">Note: Countries whose data was withheld to limit disclosure for 1 year or more were excluded from this analysis. Represented by (D) in source database.</p>
+    </div>
   </div>
 
 </body>

@@ -1182,7 +1182,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(200)
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Uzbekistan" + "<br>" + "<strong>Population:</strong> 31.30M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/uzout.gif style='width: 150px; height: 200px;''>" +
-            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
+            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)

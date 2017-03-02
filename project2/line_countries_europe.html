@@ -6,9 +6,34 @@
 </head>
 
 <body>
-  <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
-  <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
 
+<!-- TOP TITLE -->
+<div id="all">
+    <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
+    <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
+</div>
+
+<!-- LEFT --> 
+  <div id="left">
+      <div class="buttons">
+        <ul>
+          <li><a href="https://alanz09.github.io/project2/total_countries" style="font-size: 18px">back</a></li> <!-- opaque here --> 
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;&nbsp;&nbsp; home</a></li> <!-- TITLE PAGE --> 
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;&nbsp;&nbsp; bar | by region</a></li> <!-- total_countries bar chart -->
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/line_countries">&#x25FC;&nbsp;&nbsp; <strong>line | by country</strong></a></li>
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/line_countries7">&#x25FB;&nbsp;&nbsp; line | 7 country ban</a></li>
+          &nbsp;&nbsp;
+          <li><a href="https://alanz09.github.io/project2/line_countries7" style="font-size: 18px">next</a></li>
+        </ul>
+      </div>
+  </div>
+
+<!-- MIDDLE -->
+  <div id="middle">
   <div class="chart">
     <script>
       // Set the dimensions of the canvas / graph
@@ -129,7 +154,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Armenia" + "<br>" + "<strong>Population:</strong> 3.02M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/am.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Armenia" + "<br>" + "<strong>Population:</strong> 3.02M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/am.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -156,7 +181,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Azerbaijan" + "<br>" + "<strong>Population:</strong> 9.65M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/az.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Azerbaijan" + "<br>" + "<strong>Population:</strong> 9.65M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/az.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -183,7 +208,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Belarus" + "<br>" + "<strong>Population:</strong> 9.51M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/by.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Belarus" + "<br>" + "<strong>Population:</strong> 9.51M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/by.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -210,7 +235,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Georgia" + "<br>" + "<strong>Population:</strong> 3.68M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/ge.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Georgia" + "<br>" + "<strong>Population:</strong> 3.68M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/ge.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -237,7 +262,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Kazakhstan" + "<br>" + "<strong>Population:</strong> 17.54M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kzout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Kazakhstan" + "<br>" + "<strong>Population:</strong> 17.54M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kzout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -264,7 +289,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Kyrgyzstan" + "<br>" + "<strong>Population:</strong> 5.96M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kgout.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Kyrgyzstan" + "<br>" + "<strong>Population:</strong> 5.96M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/kgout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -292,7 +317,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Moldova" + "<br>" + "<strong>Population:</strong> 3.55M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/md.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Moldova" + "<br>" + "<strong>Population:</strong> 3.55M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/md.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -319,7 +344,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Russia" + "<br>" + "<strong>Population:</strong> 144.10M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/ruout.gif style='width: 200px; height: 100px;''>");
+          div.html("<strong>Country: </strong>Russia" + "<br>" + "<strong>Population:</strong> 144.10M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/ruout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -346,7 +371,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Ukraine" + "<br>" + "<strong>Population:</strong> 45.20M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/ua.gif style='width: 150px; height: 150px;''>");
+          div.html("<strong>Country: </strong>Ukraine" + "<br>" + "<strong>Population:</strong> 45.20M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/ua.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -373,7 +398,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Uzbekistan" + "<br>" + "<strong>Population:</strong> 31.30M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/uzout.gif style='width: 150px; height: 200px;''>");
+          div.html("<strong>Country: </strong>Uzbekistan" + "<br>" + "<strong>Population:</strong> 31.30M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/uzout.gif style='width: 150px; height: 150px;''>" + "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -428,36 +453,25 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
 
     </script>
   </div>
-
-  <div class="continents">
-    <ul>
-      <li id="click">Click to view: </li>
-      <li><a href="https://alanz09.github.io/project2/line_countries_latinam" class="latinam">Latin Am + Caribbean | </li>
-      <li><a href="https://alanz09.github.io/project2/line_countries_africa" class="africa">Africa | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries_asia" class="asia">Asia | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries_europe" class="europe">Europe | </li> 
-      <li><a href="https://alanz09.github.io/project2/line_countries" class="all">All Continents</li>
-    </ul>
   </div>
 
-  <div class="buttons">
-    <ul>
-      <li><a href="https://alanz09.github.io/project2/total_countries">back</li>
-      &nbsp;&nbsp;
-      <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;</li> <!-- TITLE PAGE --> 
-      &nbsp;&nbsp;
-      <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FB;</li> <!-- total_countries bar chart -->
-      &nbsp;&nbsp;
-      <li><a href="#">&#x25FC;</li> <!-- interactive line chart -->
-      &nbsp;&nbsp;
-      <li><a href="#">next</li>
-    </ul>
-  </div>
+  <!-- bottom -->
+  <div id="bottom1">
+    <p class="linetext animated fadeIn"><strong>Hover over the lines to learn about the incoming refugee population by country of origin, or click below to view by region.</strong><br></p>
 
-  <div class="contribution">
-    <p id="source">Countries whose data was withheld to limit disclosure for 1 year or more were excluded from this analysis. Represented by (D) in source database.
-    <br>
-    <strong>SOURCE:</strong> U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS)<br> Additional sources: <br> Population - World Bank</p>
+    <div>
+        <ul>
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries_latinam" class="latinam">Latin Am + Caribbean | </a></li>
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries_africa" class="africa">Africa | </a></li> 
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries_asia" class="asia">Asia | </a></li> 
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries_europe" class="europe"><strong>Europe | </strong></a></li> 
+          <li class="clickcount"><a href="https://alanz09.github.io/project2/line_countries" class="all">All Regions</a></li>
+        </ul>
+    </div>
+
+    <div class="contribution">
+        <p id="source">Note: Countries whose data was withheld to limit disclosure for 1 year or more were excluded from this analysis. Represented by (D) in source database.</p>
+    </div>
   </div>
 
 </body>
