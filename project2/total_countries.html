@@ -4,6 +4,7 @@
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
     <link href="style.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="animate.css"/>
+    <script src="https://github.com/HubSpot/tether/blob/master/dist/js/tether.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -69,18 +70,27 @@
 <!-- RIGHT --> 
   <div id="right">
     <p class="leg animated fadeIn">Refugee legislation has transformed over the years in response to global events.</p>
-    <p class="leg2 animated fadeIn">Click the links below to learn more,<br> or over the bar chart to see counts<br> for each region.</p>
+    <p class="leg2 animated fadeIn">Click the links below to learn more,<br> or mouse over the bar chart to see <br>counts for each region.</p>
 
     <ul class="list-inline">
-      <li><a class="first animated fadeIn" href="#" data-toggle="popover" data-placement="left" data-content="Hooray!">The Refugee Act of 1980</a></li>
+
+      <li><a class="first animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="In 1975 after the fall of Saigon, President Ford signed into law the establishment of a resettlement assistance program for South Asian refugees.<br><br>The formal refugee resettlement program ended in the mid 90's.<br><br>Source: <a href='http://gao.gov/assets/120/115626.pdf'>US General Accounting Service</a>">Indochina Migration and Refugee Assistance Act of 1975</a></li>
 
       &nbsp;&nbsp;
 
-      <li><a class="second animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="<strong>US Citizenship and Immigration Services within the Department of Homeland Security determines refugee eligibility.</strong><br><br><strong>Priority One:</strong> Individuals with compelling persecution needs where no other solution exists. Typically referred to US by UNHCR or identified by US embassy or NGO.<br><br><strong>Priority Two:</strong> Groups of special concern to the US; selected by Department of State. Current list of countries include: from former Soviet Union, Cuba, DRC, Iraq, Iran, Burma, and Bhutan<br><br><strong>Priority Three:</strong> Relatives of refugees who are already settled in the US.">Classifying Refugees</a></li>
+      <li><a class="second animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="The Refugee Act of 1980 was created in the aftermath of the Vietnam War to create a formal process for accepting refugees to the United States. Between 1975 and 1979, ~300,000 refugees from Asia came to the US through presidential action.<br><br>The Act adjusted the annual ceiling for refugees from 17,400 to 50,000 and created a process for reviewing and adjusting the ceiling for emergency admissions. Annual admissions have ranged from 207,000 in 1980 to 27,110 in 2002. A new definition of refugee was also coined: a person with 'well-founded fear of persecution.'<br><br>As a result of the Act and large wave of refugees from Vietnam and Cambodia, the largest number of refugees entered the US in 1980.<br><br>Source: <a href='https://www.archivesfoundation.org/documents/refugee-act-1980/'>National Archives Foundation</a>">The Refugee Act of 1980</a></li>
 
       &nbsp;&nbsp;
 
-      <li><a class="third animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="<strong>The current screening process for refugees coming to the U.S. is long and arduous.</strong> <br>1. Registration with the UN<br>2. Interview with the UN<br>3. Refugee status granted by the UN<br>4. Referral for resettlement in the US<br>5. Interview with State Dept contractors<br>6. First background check<br>7. Higher-level background check for some<br>8. Another background check<br>9. First fingerprint screening; photo<br>10. Second fingerprint screening<br>11. Third fingerprint screening<br>12. Case reviewed at US immigrant HQ<br>13. Some cases require additional review<br>14. Extensive, in-person interview with Homeland Security officer<br>15. Homeland Security approval required<br>16. Screening for contagious diseases<br>17. Cultural orientation class<br>18. Matched with US resettlement agency<br>19. Multi-agency security check before coming to US<br>20. First security check at US airport<br>*From <a href='https://www.nytimes.com/interactive/2017/01/29/us/refugee-vetting-process.html?_r=0'>NYT article</a>">Refugee Vetting Process</a></li>
+      <li><a class="third animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="<strong>After 9/11, the US refugee program came to a halt.</strong> In October 2001, the beginning of FY 2002 refugee admissions, President George W. Bush had not yet signed the Presidential Determination (PD) granting refugee admissions. The PD was eventually authorized - for 70,000 refugees - on November 21 of that year.<br><br>The Patriot Act, which was signed into law on October 26 of 2001, enhanced domestic security and surveillance against terrorism. The Act also broadened the definition of supporting a terrorist group. The years 2002 and 2003 saw dramatic dips in the number of refugees coming to the US.<br><br>Source: <a href='http://www.refworld.org/docid/3c5809994.html'>US Committee for Refugees and Immigrants</a>">Post 9/11</a></li>
+
+      &nbsp;&nbsp;
+
+      <li><a class="forth animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="<strong>US Citizenship and Immigration Services within the Department of Homeland Security determines refugee eligibility.</strong><br><br><strong>Priority One:</strong> Individuals with compelling persecution needs where no other solution exists. Typically referred to US by UNHCR or identified by US embassy or NGO.<br><br><strong>Priority Two:</strong> Groups of special concern to the US; selected by Department of State. Current list of countries include: from former Soviet Union, Cuba, DRC, Iraq, Iran, Burma, and Bhutan<br><br><strong>Priority Three:</strong> Relatives of refugees who are already settled in the US.<br><br>Source: <a href='https://www.americanimmigrationcouncil.org/research/overview-us-refugee-law-and-policy'>American Immigration Council</a>">Classifying Refugees</a></li>
+
+      &nbsp;&nbsp;
+
+      <li><a class="fifth animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="<strong>The current screening process for refugees coming to the U.S. is long and arduous.</strong> <br><br>1. Registration with the UN<br>2. Interview with the UN<br>3. Refugee status granted by the UN<br>4. Referral for resettlement in the US<br>5. Interview with State Dept contractors<br>6. First background check<br>7. Higher-level background check for some<br>8. Another background check<br>9. First fingerprint screening; photo<br>10. Second fingerprint screening<br>11. Third fingerprint screening<br>12. Case reviewed at US immigrant HQ<br>13. Some cases require additional review<br>14. Extensive, in-person interview with Homeland Security officer<br>15. Homeland Security approval required<br>16. Screening for contagious diseases<br>17. Cultural orientation class<br>18. Matched with US resettlement agency<br>19. Multi-agency security check before coming to US<br>20. First security check at US airport<br><br>Source: <a href='https://www.nytimes.com/interactive/2017/01/29/us/refugee-vetting-process.html?_r=0'>NYT article</a>">Refugee Vetting Process</a></li>
     </ul>
 
 

@@ -265,12 +265,23 @@ path.domain {
   animation-iteration-count: 1;
 }
 
+.forth {
+  color: dimgrey;
+  animation-duration: 3s;
+  animation-delay: 7s;
+  animation-iteration-count: 1;
+}
+
+.fifth {
+  color: dimgrey;
+  animation-duration: 3s;
+  animation-delay: 7.5s;
+  animation-iteration-count: 1;
+}
+
 .popover-content {
   padding: 10px;
   line-height: 15px;
-}
-
-.list-inline {
 }
 
 
