@@ -59,6 +59,7 @@ body {
   width: 100%;
   text-align: center;
   margin: 0px auto;
+  display: inline-block;
 }
 
 /* NAV ================================================================================ */
@@ -122,7 +123,7 @@ ul {
 
 #source {
   font-size: 12px;
-  color: grey;
+  color: lightgrey;
   line-height: 18px;
   font-family: 'Lato', sans-serif;
   padding-left: 23px;
@@ -151,7 +152,7 @@ ul {
 #start {
   font-size: 14px;
   font-family: 'Mukta Vaani', sans-serif;
-  padding-left: 800px;
+  padding-left: 600px;
   color: #1a1a1a;
   animation-duration: 4s;
   animation-delay: 6s;
@@ -269,7 +270,7 @@ path.domain {
 
 .leg2 {
   animation-duration: 3s;
-  animation-delay: 4.5s;
+  animation-delay: 5s;
   animation-iteration-count: 1;
   font-size: 12px;
   line-height: 20px;
@@ -280,35 +281,35 @@ path.domain {
 .first {
   color: dimgrey;
   animation-duration: 3s;
-  animation-delay: 6s;
+  animation-delay: 8s;
   animation-iteration-count: 1;
 }
 
 .second {
   color: dimgrey;
   animation-duration: 3s;
-  animation-delay: 6.5s;
+  animation-delay: 8.5s;
   animation-iteration-count: 1;
 }
 
 .third {
   color: dimgrey;
   animation-duration: 3s;
-  animation-delay: 7s;
+  animation-delay: 9s;
   animation-iteration-count: 1;
 }
 
 .forth {
   color: dimgrey;
   animation-duration: 3s;
-  animation-delay: 7.5s;
+  animation-delay: 9.5s;
   animation-iteration-count: 1;
 }
 
 .fifth {
   color: dimgrey;
   animation-duration: 3s;
-  animation-delay: 8s;
+  animation-delay: 10s;
   animation-iteration-count: 1;
 }
 

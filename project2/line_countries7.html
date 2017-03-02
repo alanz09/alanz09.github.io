@@ -3,6 +3,8 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
     <link href="style.css" rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -47,6 +49,28 @@
 
 <!-- RIGHT --> 
   <div id="right">
+  </div>
+
+    <!-- bottom -->
+  <div id="bottom1">
+    <p class="linetext animated fadeIn"><strong>On January 27, 2017, President Donald Trump signed an executive order that suspended the<br> US Refugee Admissions Program (USRAP) for 120 days. </strong><br></p>
+
+    <p id="greytext">Seven Muslim majority countries were banned from entering the United States for 90 days. <br>Click on a country name below to learn more about the refugee situation.<br> 
+    <a class="first animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="top" data-content="Syria's civil war has been deemed 'the deadliest conflict the 21st century has seen thus far'. The conflict grew out of the 2011 Arab Spring protests and escalated when President Bashar al-Assad responded to protests of the Syrian government by killing and imprisoning hundreds of demonstrators. <br><br>Over 12 million people have been displaced from their homes. President Obama increased the cap on the number of Syrian refugees allowed into the US in 2016 to 10,000 - a sixfold increase in admissions from the previous year.<br><br>Source: <a href='http://www.aljazeera.com/news/2016/05/syria-civil-war-explained-160505084119966.html'>Al Jazeera</a>">Syria, </a>
+
+Iraq, Iran, Yemen, Libya, Somalia, and Sudan.</p>
+
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();   
+        });
+    </script>
+
+    <div class="contribution">
+        <p id="source">Note: Countries whose data was withheld to limit disclosure for 1 year or more were excluded from this analysis. Represented by (D) in source database.<br>
+        Source: <a href="http://ireports.wrapsnet.org/" style="color:lightgrey;">U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS);</a> <a href="http://data.worldbank.org/indicator/SP.POP.TOTL" style="color:lightgrey;">World Bank;</a> <a href="http://www.worldatlas.com/" style="color:lightgrey;">World Atlas </a></p>
+    </div>
   </div>
 
 </body>

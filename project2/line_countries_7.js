@@ -1545,7 +1545,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
       .append("text")
       .attr("transform", "translate(0," + height + ")")
       .attr("y", 45)
-      .attr("x", 480)
+      .attr("x", 430)
       .style("text-anchor", "end")
       .text("Year");
 
