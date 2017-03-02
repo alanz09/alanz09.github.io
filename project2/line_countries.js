@@ -396,7 +396,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Democratic Republic of Congo" + "<br>" + "<strong>Population:</strong> 77.27M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/cdout.gif style='width: 150px; height: 150px;''>" +
+          div.html("<strong>Country: </strong>Dem Rep of Congo" + "<br>" + "<strong>Population:</strong> 77.27M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/africa/outline/cdout.gif style='width: 150px; height: 150px;''>" +
             "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"); //2015
           d3.select(this)
             .style("stroke", "black")
@@ -1125,8 +1125,8 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Russia" + "<br>" + "<strong>Population:</strong> 144.10M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/ruout.gif style='width: 200px; height: 100px;''>" +
-            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
+          div.html("<strong>Country: </strong>Russia" + "<br>" + "<strong>Population:</strong> 144.10M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/ruout.gif style='width: 150px; height: 100px;''>" +
+            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -1153,7 +1153,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Ukraine" + "<br>" + "<strong>Population:</strong> 45.20M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/ua.gif style='width: 200px; height: 150px;''>" +
+          div.html("<strong>Country: </strong>Ukraine" + "<br>" + "<strong>Population:</strong> 45.20M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/europe/outline/ua.gif style='width: 150px; height: 150px;''>" +
             "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
@@ -1181,7 +1181,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Uzbekistan" + "<br>" + "<strong>Population:</strong> 31.30M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/uzout.gif style='width: 200px; height: 200px;''>" +
+          div.html("<strong>Country: </strong>Uzbekistan" + "<br>" + "<strong>Population:</strong> 31.30M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/uzout.gif style='width: 150px; height: 200px;''>" +
             "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
@@ -1237,7 +1237,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
           div.transition()
             .duration(200)
             .style("opacity", 1);
-          div.html("<strong>Country: </strong>Cuba" + "<br>" + "<strong>Population:</strong> 11.39M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/caribb/outline/cubaout.gif style='width: 230px; height: 150px;''>" +
+          div.html("<strong>Country: </strong>Cuba" + "<br>" + "<strong>Population:</strong> 11.39M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/namerica/caribb/outline/cubaout.gif style='width: 180px; height: 150px;''>" +
             "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
@@ -1509,7 +1509,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
 
   // Define the div for the tooltip
   var div = d3.select("body").append("div") // TOOLTIP STUFF 
-      .attr("class", "linestool")       
+      .attr("class", "tooltip")       
       .style("opacity", 0);
 
     // Add the X Axis

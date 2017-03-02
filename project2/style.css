@@ -55,6 +55,12 @@ body {
   width: 100%;
 }
 
+#bottom1 {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+
 .contribution {
     padding-left: 60px;
 }
@@ -152,6 +158,20 @@ ul {
   animation-iteration-count: 1;
 }
 
+.linetext {
+  font-size: 14px;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  line-height: 20px;
+  color: #f2b447;
+}
+
+#greytext {
+  color: grey;
+}
+
+
 /* CHART ================================================================================ */
 
 svg {
@@ -208,6 +228,17 @@ div.popover {
     font: 11px sans-serif;
     line-height: 15px;
     background: lightgrey; 
+    color: black;
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: all;      
+}
+
+div.tooltip { 
+    display: inline-block;
+    text-align: left;     
+    font: 11px sans-serif;
+    line-height: 15px;
     color: black;
     border: 0px;    
     border-radius: 8px;     
