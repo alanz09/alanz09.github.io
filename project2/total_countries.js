@@ -147,16 +147,17 @@ var legend = svg.selectAll(".legend")
   .attr("transform", function(d, i) { return "translate(30," + i * 19 + ")"; });
  
 legend.append("rect")
-  .attr("x", width - 18)
+  .attr("x", width - 180)
   .attr("width", 18)
   .attr("height", 18)
   .style("fill", function(d, i) {return colors.slice().reverse()[i];})
   .style("opacity", 0.9);
  
 legend.append("text")
-  .attr("x", width + 5)
+  .attr("x", width - 150)
   .attr("y", 9)
   .attr("dy", ".35em")
+  .style("opacity", 0.7)
   .style("text-anchor", "start")
   .text(function(d, i) { 
     switch (i) {
@@ -165,7 +166,7 @@ legend.append("text")
       case 2: return "Asia";
       case 3: return "Africa";
     }
-  });
+  }); 
 
 // Prep the tooltip bits, initial display is hidden
 var tooltip = svg.append("g")

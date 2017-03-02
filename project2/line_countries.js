@@ -901,7 +901,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(200)
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Vietnam" + "<br>" + "<strong>Population:</strong> 91.70M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/vnout.gif style='width: 150px; height: 200px;''>" +
-            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
+            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -1126,7 +1126,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(200)
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Russia" + "<br>" + "<strong>Population:</strong> 144.10M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/ruout.gif style='width: 200px; height: 100px;''>" +
-            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
+            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -1182,7 +1182,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
             .duration(200)
             .style("opacity", 1);
           div.html("<strong>Country: </strong>Uzbekistan" + "<br>" + "<strong>Population:</strong> 31.30M" + "<br><br><br>" + "<img src=http://www.worldatlas.com/webimage/countrys/asia/outline/uzout.gif style='width: 200px; height: 200px;''>" +
-            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
+            "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>");
           d3.select(this)
             .style("stroke", "black")
             .style("stroke-width", 2.5)
@@ -1509,7 +1509,7 @@ data = [{year: "2017", angola: 0, burundi: 172, CAR: 172, chad: 5, congo: 1, DEC
 
   // Define the div for the tooltip
   var div = d3.select("body").append("div") // TOOLTIP STUFF 
-      .attr("class", "tooltip")       
+      .attr("class", "linestool")       
       .style("opacity", 0);
 
     // Add the X Axis

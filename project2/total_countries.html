@@ -4,6 +4,8 @@
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
     <link href="style.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="animate.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -18,9 +20,11 @@
   <div id="left">
       <div class="buttons">
         <ul>
-          <li><a href="https://alanz09.github.io/project2/refugees_title">back</a></li> <!-- opaque here --> 
+          <li><a href="https://alanz09.github.io/project2/refugees_title" style="font-size: 18px">back</a></li> <!-- opaque here --> 
           &nbsp;&nbsp;
           <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;&nbsp;&nbsp; home</a></li> <!-- TITLE PAGE --> 
+          &nbsp;&nbsp;
+          <li><a href="#">&#x25FB;&nbsp;&nbsp; intro</a></li>
           &nbsp;&nbsp;
           <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FC;&nbsp;&nbsp; <strong>bar | by region</strong></a></li> <!-- total_countries bar chart -->
           &nbsp;&nbsp;
@@ -28,9 +32,29 @@
           &nbsp;&nbsp;
           <li><a href="https://alanz09.github.io/project2/line_countries7">&#x25FB;&nbsp;&nbsp; line | 7 country ban</a></li>
           &nbsp;&nbsp;
-          <li><a href="https://alanz09.github.io/project2/line_countries">next</a></li>
+          <li><a href="https://alanz09.github.io/project2/line_countries" style="font-size: 18px">next</a></li>
         </ul>
       </div>
+
+<!-- progress bar --> 
+    <div id="container"></div>    
+
+    <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.6.1/dist/progressbar.js"></script>
+
+    <script type="text/javascript">
+        var bar = new ProgressBar.Line(container, {
+          strokeWidth: 4,
+          easing: 'linear',
+          duration: 7050,
+          color: 'darkgrey',
+          trailColor: '#eee',
+          trailWidth: 1,
+          svgStyle: {width: '100%', height: '100%'}
+        });
+
+        bar.animate(1.0); 
+    </script>
+
   </div>
 
 <!-- MIDDLE -->
@@ -40,15 +64,35 @@
       <script src="total_countries.js"></script>
     </div>
 
-    <div id="introbar" class="animated fadeIn">
-      <p> hello </p>
-    </div>
-
   </div>
 
 <!-- RIGHT --> 
   <div id="right">
+    <p class="leg animated fadeIn">Refugee legislation has transformed over the years in response to global events.</p>
+    <p class="leg2 animated fadeIn">Click the links below to learn more,<br> or over the bar chart to see counts<br> for each region.</p>
+
+    <ul class="list-inline">
+      <li><a class="first animated fadeIn" href="#" data-toggle="popover" data-placement="left" data-content="Hooray!">The Refugee Act of 1980</a></li>
+
+      &nbsp;&nbsp;
+
+      <li><a class="second animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="<strong>US Citizenship and Immigration Services within the Department of Homeland Security determines refugee eligibility.</strong><br><br><strong>Priority One:</strong> Individuals with compelling persecution needs where no other solution exists. Typically referred to US by UNHCR or identified by US embassy or NGO.<br><br><strong>Priority Two:</strong> Groups of special concern to the US; selected by Department of State. Current list of countries include: from former Soviet Union, Cuba, DRC, Iraq, Iran, Burma, and Bhutan<br><br><strong>Priority Three:</strong> Relatives of refugees who are already settled in the US.">Classifying Refugees</a></li>
+
+      &nbsp;&nbsp;
+
+      <li><a class="third animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="<strong>The current screening process for refugees coming to the U.S. is long and arduous.</strong> <br>1. Registration with the UN<br>2. Interview with the UN<br>3. Refugee status granted by the UN<br>4. Referral for resettlement in the US<br>5. Interview with State Dept contractors<br>6. First background check<br>7. Higher-level background check for some<br>8. Another background check<br>9. First fingerprint screening; photo<br>10. Second fingerprint screening<br>11. Third fingerprint screening<br>12. Case reviewed at US immigrant HQ<br>13. Some cases require additional review<br>14. Extensive, in-person interview with Homeland Security officer<br>15. Homeland Security approval required<br>16. Screening for contagious diseases<br>17. Cultural orientation class<br>18. Matched with US resettlement agency<br>19. Multi-agency security check before coming to US<br>20. First security check at US airport<br>*From <a href='https://www.nytimes.com/interactive/2017/01/29/us/refugee-vetting-process.html?_r=0'>NYT article</a>">Refugee Vetting Process</a></li>
+    </ul>
+
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();   
+        });
+    </script>
+
   </div>
+
+
 
   <!--<div class="contribution">
     <p id="source">NOTE: Region counts based on the nationality of the principle applicant. Asia includes Amerasian immigrants and Europe includes regions of the Former Soviet Union.
