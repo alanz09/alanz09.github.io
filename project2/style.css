@@ -224,7 +224,6 @@ path {
 }
 
 div.popover { 
-    display: inline-block;
     text-align: left;     
     width: 240px;          
     padding: 10px;  
@@ -234,7 +233,7 @@ div.popover {
     color: black;
     border: 0px;    
     border-radius: 8px;     
-    pointer-events: all;      
+    pointer-events: all;   
 }
 
 div.tooltip { 
@@ -245,7 +244,8 @@ div.tooltip {
     color: black;
     border: 0px;    
     border-radius: 8px;     
-    pointer-events: all;      
+    pointer-events: all; 
+    background: lightgrey;     
 }
 
 path.domain {
@@ -283,6 +283,7 @@ path.domain {
   animation-duration: 3s;
   animation-delay: 8s;
   animation-iteration-count: 1;
+  position: relative;
 }
 
 .second {
@@ -316,6 +317,10 @@ path.domain {
 .popover-content {
   padding: 10px;
   line-height: 15px;
+}
+
+#popover636917 {
+  position: absolute;
 }
 
 

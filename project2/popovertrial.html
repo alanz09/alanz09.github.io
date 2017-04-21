@@ -11,66 +11,12 @@
 
 <body>
 
-<!-- TOP TITLE -->
-<div id="all">
-    <p class="top"> <span id="title">Refugees admitted to the U.S over time</span><br>
-    <span id="subtitle">A look into the origin of refugees entering the United States.</span></p>
-</div>
-
-<!-- LEFT --> 
-  <div id="left">
-      <div class="buttons">
-        <ul>
-          <li><a href="https://alanz09.github.io/project2/refugees_title" style="font-size: 18px">back</a></li> <!-- opaque here --> 
-          &nbsp;&nbsp;
-          <li><a href="https://alanz09.github.io/project2/refugees_title">&#x25FB;&nbsp;&nbsp; home</a></li> <!-- TITLE PAGE --> 
-          &nbsp;&nbsp;
-          <li><a href="https://alanz09.github.io/project2/total_countries">&#x25FC;&nbsp;&nbsp; <strong>bar | by region</strong></a></li> <!-- total_countries bar chart -->
-          &nbsp;&nbsp;
-          <li><a href="https://alanz09.github.io/project2/line_countries">&#x25FB;&nbsp;&nbsp; line | by country</a></li>
-          &nbsp;&nbsp;
-          <li><a href="https://alanz09.github.io/project2/line_countries7">&#x25FB;&nbsp;&nbsp; line | 7 country ban</a></li>
-          &nbsp;&nbsp;
-          <li><a href="https://alanz09.github.io/project2/line_countries" style="font-size: 18px">next</a></li>
-        </ul>
-      </div>
-
-<!-- progress bar --> 
-    <div id="container"></div>    
-
-    <script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.6.1/dist/progressbar.js"></script>
-
-    <script type="text/javascript">
-        var bar = new ProgressBar.Line(container, {
-          strokeWidth: 4,
-          easing: 'linear',
-          duration: 7050,
-          color: 'darkgrey',
-          trailColor: '#eee',
-          trailWidth: 1,
-          svgStyle: {width: '100%', height: '100%'}
-        });
-
-        bar.animate(1.0); 
-    </script>
-
-  </div>
-
-<!-- MIDDLE -->
-  <div id="middle">
-
-    <div id="chart" class="animated fadeIn">    
-      <script src="total_countries.js"></script>
-    </div>
-
-  </div>
-
 <!-- RIGHT --> 
   <div id="right">
     <p class="leg animated fadeIn">Refugee legislation has transformed over the years in response to global events.</p>
     <p class="leg2 animated fadeIn">Click the links below to learn more,<br> or mouse over the bar chart to see <br>counts for each region.</p>
 
-      <a class="first animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="In 1975 after the fall of Saigon, President Ford signed into law the establishment of a resettlement assistance program for South Asian refugees.<br><br>The formal refugee resettlement program ended in the mid 90's.<br><br>Source: <a href='http://gao.gov/assets/120/115626.pdf'>US General Accounting Service</a>">Indochina Migration and Refugee Assistance Act of 1975</a>
+      <a type="button" href="#" class="btn btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title="In 1975 after the fall of Saigon, President Ford signed into law the establishment of a resettlement assistance program for South Asian refugees.<br><br>The formal refugee resettlement program ended in the mid 90's.<br><br>Source: <a href='http://gao.gov/assets/120/115626.pdf'>US General Accounting Service</a>">Indochina Migration and Refugee Assistance Act of 1975</a>
 
       <br><br>
 
@@ -88,6 +34,9 @@
 
       <a class="fifth animated fadeIn" href="#" data-html="true" data-toggle="popover" data-placement="left" data-content="<strong>The current screening process for refugees coming to the U.S. is long and arduous.</strong> <br><br>1. Registration with the UN<br>2. Interview with the UN<br>3. Refugee status granted by the UN<br>4. Referral for resettlement in the US<br>5. Interview with State Dept contractors<br>6. First background check<br>7. Higher-level background check for some<br>8. Another background check<br>9. First fingerprint screening; photo<br>10. Second fingerprint screening<br>11. Third fingerprint screening<br>12. Case reviewed at US immigrant HQ<br>13. Some cases require additional review<br>14. Extensive, in-person interview with Homeland Security officer<br>15. Homeland Security approval required<br>16. Screening for contagious diseases<br>17. Cultural orientation class<br>18. Matched with US resettlement agency<br>19. Multi-agency security check before coming to US<br>20. First security check at US airport<br><br>Source: <a href='https://www.nytimes.com/interactive/2017/01/29/us/refugee-vetting-process.html?_r=0'>NYT article</a>">Refugee Vetting Process</a>
 
+      <a type="button" href="#" class="btn btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>The current screening process for refugees coming to the U.S. is long and arduous.</strong> <br><br>1. Registration with the UN<br>2. Interview with the UN<br>3. Refugee status granted by the UN<br>4. Referral for resettlement in the US<br>5. Interview with State Dept contractors<br>6. First background check<br>7. Higher-level background check for some<br>8. Another background check<br>9. First fingerprint screening; photo<br>10. Second fingerprint screening<br>11. Third fingerprint screening<br>12. Case reviewed at US immigrant HQ<br>13. Some cases require additional review<br>14. Extensive, in-person interview with Homeland Security officer<br>15. Homeland Security approval required<br>16. Screening for contagious diseases<br>17. Cultural orientation class<br>18. Matched with US resettlement agency<br>19. Multi-agency security check before coming to US<br>20. First security check at US airport<br><br>Source: <a href='https://www.nytimes.com/interactive/2017/01/29/us/refugee-vetting-process.html?_r=0'>NYT article</a>">Tooltip on left</a>
+
+
 
     <script>
         $(document).ready(function(){
@@ -100,20 +49,6 @@
     </script>
 
   </div>
-
-  <!-- bottom -->
-  <div id="bottom1">
-      <div class="contribution">
-        <p id="source">Note: Region counts based on the nationality of the principle applicant. Asia includes Amerasian immigrants and Europe includes regions of the Former Soviet Union.<br>
-        Source: <a href="http://ireports.wrapsnet.org/" style="color:lightgrey;">U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS);</a></p>
-    </div>
-  </div>
-
-  <!--<div class="contribution">
-    <p id="source">NOTE: Region counts based on the nationality of the principle applicant. Asia includes Amerasian immigrants and Europe includes regions of the Former Soviet Union.
-    <br>
-    <strong>SOURCE:</strong> U.S. Department of State, Refugee Processing Center and Worldwide Refugee Admissions Processing System (WRAPS)</p>
-  </div> --> 
 
 </body>
 </html>

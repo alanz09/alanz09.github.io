@@ -1,22 +1,185 @@
 <!DOCTYPE html>
 	<head>
+		<meta charset="utf-8">
+
+		<!-- using d3 --> 
+	    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+
+	    <!-- style sheet maybe --> 
+	    <link href="style.css" rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="animate.css"/>
+	    <script src="https://github.com/HubSpot/tether/blob/master/dist/js/tether.min.js"></script>
+
+		<!-- using bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	    <style> /* set the CSS */
+		    @import url('https://fonts.googleapis.com/css?family=PT+Serif');
+		    @import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+		    body {
+		    	font: 12px Arial;
+		    }
+
+		    path { 
+		        stroke: steelblue;
+		        stroke-width: 1.5;
+		        fill: none;
+		    }
+
+		    h1 {
+		    	font-family: "Lato", sans-serif;
+		    	font-size: 48px;
+		    	text-align: center;
+		    }
+
+		    .axis path,
+		    .axis line {
+		        fill: none;
+		        stroke: grey;
+		        opacity: 0.1;
+		        stroke-width: 1;
+		        shape-rendering: crispEdges;
+		    }
+
+		    .tick text{
+		    	font-size: 10px;
+		    	font-weight: normal;
+		    }
+
+		    .tick line{
+		    	opacity: 0.1;
+		    /* stroke-dasharray: 4,4;*/
+		    }
+
+		    div.tooltip {	
+		        position: absolute;			
+		        text-align: left;			
+		        width: 180px;					
+		        height: 55px;					
+		        padding: 8px;
+		        font: 12px sans-serif;		
+		        background: whitesmoke;	
+		        border: 0px;		
+		        border-radius: 8px;			
+		        pointer-events: all;			
+		    }
+
+		    h1 {
+		    	/* font-family: 'PT Serif', serif; */
+		    	padding-left: 23px;
+		    	padding-top: 15px;
+		    }
+
+		    p {
+		    	padding-left: 23px;
+		    	font-family: 'Lato', sans-serif;
+		    	font-size: 14px;
+		    }
+
+		    #source {
+		    	font-size: 12px;
+		    	color: grey;
+		    	line-height: 20px;
+		    }
+
+		    img {
+		    	padding: 10px;
+		    }
+
+			#chart {
+				float: left;
+  				position: relative;
+			}
+
+			#intro_text {
+				padding-left: 30%;
+				padding-right: 30%;
+			}
+
+		</style>
 	</head>
 
 <body>
 
-<!-- TOP -->
-<div>
-	<h1>People's sexiest man</h1>
+<div class="container">
+	<!-- TOP ====================================================================-->
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>PEOPLE'S SEXIEST MAN</h1>
+			<p id="intro_text">
+			<span style="text-align:center;">by Amy Lanza</span>
+			<br><br>
+			Each year, People Magazine grants one lucky fellow the title of Sexiest Man. While staffers at the magazine traditionally choose the winner each year, they also survey magazine readers "to see which sexy men are getting [them] worked up". </p>
+		</div>
+	</div>
 
-</div>
+	<!-- 1985: MEL GIBSON ====================================================================--> 
+	<div class="row">
+		<div class="col-sm-2">
+			<p>1985</p>
+			<img src="http://i1352.photobucket.com/albums/q643/alanz09/Group%201_zpssmjqoacn.png" style="width: 200px; height: 200px;">
+			<p>Mel Gibson</p>
+		</div>
 
-<div>
-    <div id="chart" class="animated fadeIn">    
-      <script src="gibson.js"></script>
-    </div>
+		<div class="col-sm-8" id="gibsonchart">
+		    <script src="gibson.js"></script>
+		</div>
 
-</div>
+		<div class="col-sm-2">
+			<p>hello this is the rating change area</p>
+		</div>
+	</div>
 
+	<!-- 1986: MARK HARMON ====================================================================--> 
+	<div class="row">
+		<div class="col-sm-2">
+			<p>1986</p>
+			<img src="http://i1352.photobucket.com/albums/q643/alanz09/harmon2_zpsuo22t3g2.png" style="width: 200px; height: 200px;">
+			<p>Mark Harmon</p>
+		</div>
+
+		<div class="col-sm-8" id="harmonchart">
+		    <script src="harmon.js"></script>
+		</div>
+
+		<div class="col-sm-2">
+			<p>hello this is the rating change area</p>
+		</div>
+	</div>
+
+	<!-- 1987: MARK HARMON ====================================================================--> 
+	<div class="row">
+		<div class="col-sm-2">
+			<p>1986</p>
+			<img src="http://i1352.photobucket.com/albums/q643/alanz09/harmon2_zpsuo22t3g2.png" style="width: 200px; height: 200px;">
+			<p>Mark Harmon</p>
+		</div>
+
+		<div class="col-sm-8" id="harmonchart">
+		    <script src="harmon.js"></script>
+		</div>
+
+		<div class="col-sm-2">
+			<p>hello this is the rating change area</p>
+		</div>
+	</div>
+
+</div> <!-- end bootstrap container --> 
 
 </body>
+
+<!-- SOURCES:
+
+help using bootstrap/putting charts on same page: http://bl.ocks.org/d3noob/6a3b59149cf3ebdb3fc4 
+
+svgs on top of svg: http://bl.ocks.org/mpmckenna8/b87df1c44243aa1575cb
+
+voronoi: http://bl.ocks.org/nbremer/c0ffc07b23b1c556a66b
+
+ideas 
+https://fivethirtyeight.com/datalab/matt-damon-the-martian-sexy-smart/ -->
 </html>
