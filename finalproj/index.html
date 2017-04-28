@@ -22,10 +22,6 @@
 		    @import url('https://fonts.googleapis.com/css?family=Bevan');
 
 
-		    body {
-		    	font: 12px Arial;
-		    }
-
 		    path { 
 		        stroke: steelblue;
 		        stroke-width: 1.5;
@@ -33,11 +29,12 @@
 		    }
 
 		    h1 {
-		    	font-family: 'Bevan', cursive;
-		    	font-size: 48px;
+		    	font-family: "Lato", sans-serif;
+		    	font-size: 60px;
 		    	padding-left: 23px;
 		    	padding-top: 15px;
 		    	text-align: center;
+		    	font-color: black;
 		    }
 
 		    .axis path,
@@ -91,6 +88,8 @@
 			#intro_text {
 				padding-left: 30%;
 				padding-right: 30%;
+				font-size: 16px;
+				line-height: 25px;
 			}
 
 			.row {
@@ -150,22 +149,86 @@
    				padding: 5px;
    			}
 
+   			.top {
+   				padding-top: 80px;
+   			}
+
+   			.subtitle {
+   				text-align: center;
+   				color: steelblue;
+   				line-height: 30px;
+   			}
+
+   			.amy {
+   				text-align: center;
+   				font-size: 12px;
+   			}
+
+   			.intro_list {
+   				text-align: left;
+   				line-height: 25px;
+   				padding-left: 30%;
+				padding-right: 30%;
+
+   			}
+
 		</style>
 	</head>
 
 <body>
 
 <!-- TOP ====================================================================-->
-<div class="container">
+<div class="container top">
 	<div class="row">
 		<div class="col-sm-12">
 			<div>	
-				<h1>People Magazine's <br>Sexiest Man</h1>
+				<h1><strong>PEOPLE MAGAZINE'S <br>SEXIEST MEN</strong></h1>
+				<br>
+
+				<p class="subtitle"><strong>EXAMINING THE MOVIES MADE BY AMERICA'S HEARTTHROBS, <br>BEFORE AND AFTER CROWNING OF THE FAMED TITLE</strong></p>
+				<br>
+
+				<p class="amy">BY <strong>AMY LANZA</strong></p>
+
 				<p id="intro_text">
-				<span style="text-align:center;">by Amy Lanza</span>
+				<br>
+				Each year, <a href="http://people.com/celebrity/all-the-sexiest-man-alive-covers/2016">People Magazine</a> grants one lucky heartthrob the title of Sexiest Man by surveying magazine readers to see "which sexy men are getting [them] worked up". &nbsp;While the list ranges from Hollywood movie stars to a British soccer player, all have made an appearance in at least one full length feature film. &nbsp;What effect does being crowned "Sexiest Man" have on their film career? &nbsp;Does it hurtle them into the spotlight? &nbsp;Diminish their legitimacy as respectable actors?
 				<br><br>
-				Each year, People Magazine grants one lucky fellow the title of Sexiest Man. While staffers at the magazine traditionally choose the winner each year, they also survey magazine readers "to see which sexy men are getting [them] worked up". </p>
+				For each sexy man, I compiled a list of their films, the year in which the film was released, the film's critic rating on the popular rating website <a href="https://www.rottentomatoes.com/">Rotten Tomatoes</a>, and the total gross domestic box office for each film from <a href="http://www.boxofficemojo.com/">Box Office Mojo</a>. &nbsp;Each actor's timeline is different, depending on when their movies were made (i.e. Chris Hemsworth was not even alive when Sean Connery stared in Goldfinger.). &nbsp;Film rating and box office are used as a proxy for "success" in the industry, and box office is denoted as size of each film's dot:
+
 				<br><br>
+				Click on an actor's name below to jump to their section, and hover over the dots to learn about each movie.
+				</p>
+
+				<p class="intro_list">
+				<a href="mel">Mel Gibson (1985)</a> | 
+				<a href="mark">Mark Harmon (1986)</a> | 
+				<a href="harry">Harry Hamlin (1987)</a> |
+				<a href="jfk">John F Kennedy, Jr (1988)</a> | 
+				<a href="sean">Sean Connery (1989)</a> |
+				<a href="tom">Tom Cruise (1990)</a> |
+				<a href="pat">Patrick Swayze (1991)</a> |
+				<a href="nick">Nick Nolte (1990)</a> | 
+				<a href="rich">Richard Gere (1993/1999)</a> |
+				<a href="brad">Brad Pitt (1995/2000)</a> | 
+				<a href="denzel">Denzel Washington (1996)</a> | 
+				<a href="george">George Clooney (1997/2006)</a> |
+				<a href="harrison">Harrison Ford (1998)</a> |
+				<a href="pierce">Pierce Brosnan (2001)</a> | 
+				<a href="ben">Ben Affleck (2002)</a> |
+				<a href="johnny">Johnny Depp (2003/2009)</a> |
+				<a href="jude">Jude Law (2004)</a> |
+				<a href="matthew">Matthew McConaughey (2005)</a> | 
+				<a href="matt">Matt Damon (2007)</a> | 
+				<a href="hugh">Hugh Jackman (2008)</a> |
+				<a href="ryan">Ryan Reynolds (2010)</a> |
+				<a href="brad">Bradley Cooper (2011)</a> |
+				<a href="channing">Channing Tatum (2012)</a> | 
+				<a href="adam">Adam Levine (2013)</a> |
+				<a href="chris">Chris Hemsworth (2014)</a> |
+				<a href="david">David Beckham (2015)</a> |
+				<a href="dwayne">Dwayne Johnson (2016)</a> 
+				</p>
 				<p>need nav bar, describe RT, box office mojo, imdb etc</p>
 			</div>
 		</div>
@@ -173,7 +236,7 @@
 </div>
 
 <!-- 1985: MEL GIBSON ====================================================================--> 
-<div class="container black">
+<div class="container black" id="mel">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Mel Gibson &nbsp;<span class="date">1985</span></p>
@@ -200,7 +263,7 @@
 </div>
 
 <!-- 1986: MARK HARMON ====================================================================--> 
-<div class="container black">
+<div class="container black" id="mark">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Mark Harmon &nbsp;<span class="date">1986</span></p>
@@ -225,7 +288,7 @@
 </div>
 
 <!-- 1987: HARRY HAMLIN ====================================================================--> 
-<div class="container black">
+<div class="container black" id="harry">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Harry Hamlin &nbsp;<span class="date">1987</span></p>
@@ -250,7 +313,7 @@
 </div>
 
 <!-- 1988: JFK JR ==================================================================== --> 
-<div class="container black">
+<div class="container black" id="jfk">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">John F Kennedy, Jr &nbsp;<span class="date">1988</span></p>
@@ -275,7 +338,7 @@
 </div>
 
 <!-- 1989: SEAN CONNERY ==================================================================== --> 
-<div class="container black">
+<div class="container black" id="sean">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Sean Connery &nbsp;<span class="date">1989</span></p>
@@ -300,7 +363,7 @@
 </div>
 
 <!-- 1990: TOM CRUISE ==================================================================== -->
-<div class="container black">
+<div class="container black" id="tom">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Tom Cruise &nbsp;<span class="date">1990</span></p>
@@ -325,7 +388,7 @@
 </div>
 
 <!-- 1991: PATRICK SWAYZE ==================================================================== -->
-<div class="container black">
+<div class="container black" id="pat">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Patrick Swayze &nbsp;<span class="date">1991</span></p>
@@ -350,7 +413,7 @@
 </div>
 
 <!-- 1992: NICK NOLTE ==================================================================== -->
-<div class="container black">
+<div class="container black" id="nick">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Nick Nolte &nbsp;<span class="date">1992</span></p>
@@ -375,7 +438,7 @@
 </div>
 
 <!-- 1993: RICHARD GERE ==================================================================== -->
-<div class="container black">
+<div class="container black" id="rich">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Richard Gere &nbsp;<span class="date">1993</span></p>
@@ -409,7 +472,7 @@
 </div>
 
 <!-- 1995: BRAD PITT ==================================================================== -->
-<div class="container black">
+<div class="container black" id="brad">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Brad Pitt &nbsp;<span class="date">1995</span></p>
@@ -434,7 +497,7 @@
 </div>
 
 <!-- 1996: DENZEL WASHINGTON ==================================================================== -->
-<div class="container black">
+<div class="container black" id="denzel">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Denzel Washington &nbsp;<span class="date">1996</span></p>
@@ -459,7 +522,7 @@
 </div> 
 
 <!-- 1997: GEORGE CLOONEY ====================================================================--> 
-<div class="container black">
+<div class="container black" id="george">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">George Clooney &nbsp;<span class="date">1997</span></p>
@@ -484,7 +547,7 @@
 </div>
 
 <!-- 1998: HARRISON FORD ==================================================================== -->
-<div class="container black">
+<div class="container black" id="harrison">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Harrison Ford &nbsp;<span class="date">1998</span></p>
@@ -527,7 +590,7 @@
 </div>
 
 <!-- 2001: PIERCE BROSNAN ====================================================================--> 
-<div class="container black">
+<div class="container black" id="pierce">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Pierce Brosnan &nbsp;<span class="date">2001</span></p>
@@ -552,7 +615,7 @@
 </div>
 
 <!-- 2002: BEN AFFLECK ====================================================================--> 
-<div class="container black">
+<div class="container black" id="ben">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Ben Affleck &nbsp;<span class="date">2002</span></p>
@@ -577,7 +640,7 @@
 </div>
 
 <!-- 2003: JOHNNY DEPPPPPPPPPP ====================================================================-->
-<div class="container black">
+<div class="container black" id="johnny">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Johnny Depp &nbsp;<span class="date">2003</span></p>
@@ -602,7 +665,7 @@
 </div>
 
 <!-- 2004: JUDE LAW ====================================================================--> 
-<div class="container black">
+<div class="container black" id="jude">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Jude Law &nbsp;<span class="date">2004</span></p>
@@ -627,7 +690,7 @@
 </div>
 
 <!-- 2005: MATT MCCON ====================================================================--> 
-<div class="container black">
+<div class="container black" id="matthew">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Matthew McConaughey &nbsp;<span class="date">2005</span></p>
@@ -661,7 +724,7 @@
 </div>
 
 <!-- 2007: MATT DAMON ====================================================================--> 
-<div class="container black">
+<div class="container black" id="matt">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Matt Damon &nbsp;<span class="date">2007</span></p>
@@ -686,7 +749,7 @@
 </div>
 
 <!-- 2008: HUGH JACKMAN ====================================================================--> 
-<div class="container black">
+<div class="container black" id="hugh">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Hugh Jackman &nbsp;<span class="date">2008</span></p>
@@ -720,7 +783,7 @@
 </div>
 
 <!-- 2010: RYAN REYNOLDS ====================================================================--> 
-<div class="container black">
+<div class="container black" id="ryan">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Ryan Reynolds &nbsp;<span class="date">2010</span></p>
@@ -745,7 +808,7 @@
 </div>
 
 <!-- 2011: BRADLEY COOPER ====================================================================--> 
-<div class="container black">
+<div class="container black" id="brad">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Bradley Cooper &nbsp;<span class="date">2011</span></p>
@@ -770,7 +833,7 @@
 </div>
 
 <!-- 2012: CHANNING TATUM ====================================================================--> 
-<div class="container black">
+<div class="container black" id="channing">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Channing Tatum &nbsp;<span class="date">2012</span></p>
@@ -795,7 +858,7 @@
 </div>
 
 <!-- 2013: ADAM LEVINE ====================================================================--> 
-<div class="container black">
+<div class="container black" id="adam">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Adam Levine &nbsp;<span class="date">2013</span></p>
@@ -820,7 +883,7 @@
 </div>
 
 <!-- 2014: CHRIS HEMSWORTH ====================================================================--> 
-<div class="container test1">
+<div class="container test1" id="chris">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Chris Hemsworth &nbsp;<span class="testdate">2014</span></p>
@@ -852,7 +915,7 @@
 </div>
 
 <!-- 2015: DAVID BECKHAM ====================================================================--> 
-<div class="container black">
+<div class="container black" id="david">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">David Beckham &nbsp;<span class="date">2015</span></p>
@@ -877,7 +940,7 @@
 </div>
 
 <!-- 2016: DWAYNE JOHNSON ====================================================================--> 
-<div class="container black">
+<div class="container black" id="dwayne">
 	<div class="row">
 		<div class="col-sm-12">
 			<p class="name">Dwayne Johnson &nbsp;<span class="date">2016</span></p>
