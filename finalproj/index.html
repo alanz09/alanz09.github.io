@@ -59,10 +59,11 @@
 		    div.tooltip {	
 		        position: absolute;			
 		        text-align: left;			
-		        width: 180px;					
-		        height: 75px;					
+		        width: 190px;					
+		        height: 115px;					
 		        padding: 8px;
-		        font: 14px sans-serif;		
+		        font: 'Lato' sans-serif;		
+		        font-size: 14px;
 		        background: whitesmoke;	
 		        border: 0px;		
 		        border-radius: 8px;			
@@ -85,7 +86,7 @@
 		    	padding: 10px;
 		    }
 
-			#intro_text {
+			.intro_text {
 				padding-left: 30%;
 				padding-right: 30%;
 				font-size: 16px;
@@ -164,15 +165,9 @@
    				font-size: 12px;
    			}
 
-   			.intro_list {
-   				text-align: left;
-   				line-height: 25px;
-   				padding-left: 30%;
-				padding-right: 30%;
-   			}
-
    			.jfkjr {
    				padding-top: 60px;
+   				font-size: 16px;
    			}
 
    			.ratingtext {
@@ -190,6 +185,42 @@
 				padding-right: 30%;
    			}
 
+   			#troph {
+   				padding-left: 50%;
+				padding-right: 30%;
+				text-align: center;
+   			}
+
+   			#mags {
+				text-align: center;
+				margin: auto;
+				display: block;
+   			}
+
+   			.nav {
+   				text-align: center;
+   				font-size: 12px;
+   				font-family: "Lato", sans-serif;
+   			}
+
+   			.bottom {
+   				font-family: "Lato", sans-serif;
+   				padding-left: 45%;
+				padding-right: 45%;
+				font-size: 16px;
+   			}
+
+   			.ratingchg {
+   				padding-left: 20px;
+   				padding-top: 35px;
+   			}
+
+   			.emph {
+   				font-size: 24px;
+   				color: steelblue;
+   				font-weight: bold;
+   			}
+
 		</style>
 	</head>
 
@@ -200,15 +231,20 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div>	
-				<h1><strong>PEOPLE MAGAZINE'S <br>SEXIEST MEN</strong></h1>
+				<h1 id="top"><strong>PEOPLE MAGAZINE'S <br>SEXIEST MEN</strong></h1>
+				<br>
+
+				<!-- <img id="mags" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%201%20copy_zpst8bf2yqz.png" style="width: 693px; height: 261px;">
+				--> 
 				<br>
 
 				<p class="subtitle"><strong>EXAMINING THE MOVIES MADE BY AMERICA'S HEARTTHROBS, <br>BEFORE AND AFTER CROWNING OF THE FAMED TITLE</strong></p>
-				<br>
+				
+				<!-- <img id="troph" src="http://i1352.photobucket.com/albums/q643/alanz09/trophy_zpsye79myc6.png"> -->
 
 				<p class="amy">BY <strong>AMY LANZA</strong></p>
 
-				<p id="intro_text">
+				<p class="intro_text">
 				<br>
 				Each year, <a href="http://people.com/celebrity/all-the-sexiest-man-alive-covers/2016">People Magazine</a> grants one lucky heartthrob the title of Sexiest Man by surveying magazine readers to see "which sexy men are getting [them] worked up". &nbsp;While the list ranges from Hollywood movie stars to a British soccer player, all have made an appearance in at least one full length feature film. &nbsp;What effect does being crowned "Sexiest Man" have on their film career? &nbsp;Does it hurtle them into the spotlight? &nbsp;Diminish their legitimacy as respectable actors?
 				<br><br>
@@ -218,43 +254,68 @@
 				<br>
 				<span id="boxoffice">Smaller to larger earnings in US dollars</span>
 				<br><br>
-				Talk about the gold cup and the circle size and fix harrison ford dot (size of chart) and average rating change bubble on right
+				The gold trophy on each chart marks the year in which the celebrity received the designation of Sexiest Man, and the number to the right of the chart symbolizes <strong>the change in the celebrity's average movie rating before being crowned Sexiest Man and after being Sexiest Man.</strong> &nbsp;For example, -3.25 means the celebrity's average movie rating after being crowned is 3.25 percent LOWER than the celebrity's average movie rating before being crowned.
+				<br>
+				<img id="dotchart" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2032_zpsrlqdqw0q.png">
+				<br>
+				<span id="boxoffice">Before and after becoming a Sexy Man</span>
+				<br><br>
+				Overall, <span class="emph">FIFTY SIX PERCENT </span>of celebrities named Sexy Man saw a drop in their film ratings after the fact. &nbsp;Is being sexy worth the potential damage it can do to one's career?
 				<br><br>
 				Click on an actor's name below to jump to their section, and hover over the dots to learn about each movie.
-				</p>
-
-				<p class="intro_list">
-				<a href="#mel">Mel Gibson (1985)</a> | 
-				<a href="#mark">Mark Harmon (1986)</a> | 
-				<a href="#harry">Harry Hamlin (1987)</a> |
-				<a href="#jfk">John F Kennedy, Jr (1988)</a> | 
-				<a href="#sean">Sean Connery (1989)</a> |
-				<a href="#tom">Tom Cruise (1990)</a> |
-				<a href="#pat">Patrick Swayze (1991)</a> |
-				<a href="#nick">Nick Nolte (1990)</a> | 
-				<a href="#rich">Richard Gere (1993/1999)</a> |
-				<a href="#brad">Brad Pitt (1995/2000)</a> | 
-				<a href="#denzel">Denzel Washington (1996)</a> | 
-				<a href="#george">George Clooney (1997/2006)</a> |
-				<a href="#harrison">Harrison Ford (1998)</a> |
-				<a href="#pierce">Pierce Brosnan (2001)</a> | 
-				<a href="#ben">Ben Affleck (2002)</a> |
-				<a href="#johnny">Johnny Depp (2003/2009)</a> |
-				<a href="#jude">Jude Law (2004)</a> |
-				<a href="#matthew">Matthew McConaughey (2005)</a> | 
-				<a href="#matt">Matt Damon (2007)</a> | 
-				<a href="#hugh">Hugh Jackman (2008)</a> |
-				<a href="#ryan">Ryan Reynolds (2010)</a> |
-				<a href="#brad">Bradley Cooper (2011)</a> |
-				<a href="#channing">Channing Tatum (2012)</a> | 
-				<a href="#adam">Adam Levine (2013)</a> |
-				<a href="#chris">Chris Hemsworth (2014)</a> |
-				<a href="#david">David Beckham (2015)</a> |
-				<a href="#dwayne">Dwayne Johnson (2016)</a> 
 				</p>
 			</div>
 		</div>
 	</div>
+</div>
+
+<!-- LIST OF NAMES ====================================================================--> 
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 nav">
+			<a href="#mel">Mel Gibson (1985)</a> <br>
+			<a href="#mark">Mark Harmon (1986)</a> <br>
+			<a href="#harry">Harry Hamlin (1987)</a> <br>
+			<a href="#jfk">John F Kennedy, Jr (1988)</a> <br> 
+			<a href="#sean">Sean Connery (1989)</a> <br>
+			<a href="#tom">Tom Cruise (1990)</a> <br>
+			<a href="#pat">Patrick Swayze (1991)</a> <br>
+			<a href="#nick">Nick Nolte (1990)</a> <br>
+			<a href="#rich">Richard Gere (1993/1999)</a> 
+		</div>
+
+		<div class="col-sm-4 nav">
+			<a href="#brad">Brad Pitt (1995/2000)</a> <br>
+			<a href="#denzel">Denzel Washington (1996)</a> <br> 
+			<a href="#george">George Clooney (1997/2006)</a> <br>
+			<a href="#harrison">Harrison Ford (1998)</a><br>
+			<a href="#pierce">Pierce Brosnan (2001)</a> <br>
+			<a href="#ben">Ben Affleck (2002)</a> <br>
+			<a href="#johnny">Johnny Depp (2003/2009)</a> <br>
+			<a href="#jude">Jude Law (2004)</a> <br>
+			<a href="#matthew">Matthew McConaughey (2005)</a> 
+		</div>
+
+		<div class="col-sm-4 nav">
+			<a href="#matt">Matt Damon (2007)</a> <br>
+			<a href="#hugh">Hugh Jackman (2008)</a> <br>
+			<a href="#ryan">Ryan Reynolds (2010)</a> <br>
+			<a href="#brad">Bradley Cooper (2011)</a> <br>
+			<a href="#channing">Channing Tatum (2012)</a> <br> 
+			<a href="#adam">Adam Levine (2013)</a> <br>
+			<a href="#chris">Chris Hemsworth (2014)</a> <br>
+			<a href="#david">David Beckham (2015)</a> <br>
+			<a href="#dwayne">Dwayne Johnson (2016)</a> 
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p style="text-align: center"> &#x25CF; &#x25CF; &#x25CF; </p>
+		</div>
+	</div>	
 </div>
 
 <!-- 1985: MEL GIBSON ====================================================================--> 
@@ -286,7 +347,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2031_zpspqqtr4og.png">
 		</div>
 	</div>
 </div>
@@ -318,7 +379,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2030_zpsn6q62o0i.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Mark Harmon's drop of 39.6 percentage points is the largest in the group. &nbsp;Probably a good thing he stuck to <i>NCIS</i>.</p>
 		</div>
 	</div>
 </div>
@@ -350,7 +419,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2043_zpsvdhbgmcr.png">
 		</div>
 	</div>
 </div>
@@ -382,6 +451,7 @@
 		</div>
 
 		<div class="col-sm-2">
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2030_zpsvfck5oue.png">
 		</div>
 	</div>
 </div>
@@ -413,7 +483,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2043%20copy_zpsbsx03wim.png">
 		</div>
 	</div>
 </div>
@@ -445,7 +515,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2023_zpsrraxuc0o.png">
 		</div>
 	</div>
 </div>
@@ -477,7 +547,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2042_zpsviuqlp8l.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Swayze couldn't maitain the <i>Dirty Dancing</i> heat, even with a Havana-themed sequel in 2004 that flopped at 22%.</p>
 		</div>
 	</div>
 </div>
@@ -509,7 +587,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2040_zpshq3ey49a.png">
 		</div>
 	</div>
 </div>
@@ -541,7 +619,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2037_zpsu568h0nn.png">
 		</div>
 	</div>
 </div>
@@ -550,7 +628,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
-			<p>No award given in 1994</p>
+			<p>For 1994, no award given.</p>
 		</div>
 	</div>
 </div>
@@ -582,7 +660,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2016_zpsx9ebaxfp.png">
 		</div>
 	</div>
 </div>
@@ -614,7 +692,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2039_zpsb02k10xk.png">
 		</div>
 	</div>
 </div> 
@@ -646,7 +724,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2018_zpsofukzkbn.png">
 		</div>
 	</div>
 </div>
@@ -678,20 +756,24 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2038_zpsjkhh8auq.png">
 		</div>
 	</div>
 </div> 
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Known for his roles in <i>Indiana Jones</i> and <i>Star Wars</i>, Harrison Ford's top-rated films clustered in the beginning of his career. &nbsp;<br>An exception is the highest grossing movie of all the Sexiest Men. &nbsp;<i>Star Wars: The Force Awakens</i> (2015) brought in $936,662,225.</p>
+		</div>
+	</div>
+</div>
 
 <!-- 1999 and 2000 ====================================================================--> 
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
 			<p>For 1999, see: <a href="#rich">Richard Gere</a></p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-12">
 			<p>For 2000, see: <a href="#brad">Brad Pitt</a></p>
 		</div>
 	</div>
@@ -724,7 +806,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2036_zpsgrpdlwha.png">
 		</div>
 	</div>
 </div>
@@ -756,7 +838,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2035_zpsyluqgmjl.png">
 		</div>
 	</div>
 </div>
@@ -788,7 +870,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2032_zpsunwvgen7.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Johnny Depp's role as Captain Jack Sparrow was pretty successful in 2003 (79%), but the Captain's ratings for the <i>Pirates</i> empire have slowly dropped off ever since (2006: 54%, 2007: 45%, 2011: 32%). &nbsp;Depp has been more successful playing whimsical - almost maniacal - roles such as Willy Wonka and the Mad Hatter.</p>
 		</div>
 	</div>
 </div>
@@ -820,7 +910,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2034_zpstrwdvalq.png">
 		</div>
 	</div>
 </div>
@@ -852,7 +942,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2017_zpsfud3qtcb.png">
 		</div>
 	</div>
 </div>
@@ -893,7 +983,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2019_zpsebm2bj9g.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Matt is the only "real actor" to never dip below a 30% rating. &nbsp;"Real actor" means we're excluding <a href="#david">David Beckham</a> and <a href="#adam">Adam Levine</a> from this list.</p>
 		</div>
 	</div>
 </div>
@@ -925,7 +1023,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2033_zpshwvgf6tu.png">
 		</div>
 	</div>
 </div>
@@ -966,7 +1064,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2024_zpsreewp9fi.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Reynold's late success stems from a few super hero roles and animated movies. &nbsp;Whatever works.</p>
 		</div>
 	</div>
 </div>
@@ -998,7 +1104,7 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2026_zpsk7nwrrr0.png">
 		</div>
 	</div>
 </div>
@@ -1030,7 +1136,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2027_zpsa5lhyfae.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Tatum's high ratings stem from the <i>Magic Mike</i> empire and some animated films. &nbsp;See: <a href="#ryan">Ryan Reynolds</a></p>
 		</div>
 	</div>
 </div>
@@ -1062,7 +1176,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2028_zpsz1x28unk.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Arguably not an actor. &nbsp;See: <a href="#matt">Matt Damon</a>.</p>
 		</div>
 	</div>
 </div>
@@ -1094,8 +1216,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p class="ratingtext">Average change in rating (before vs after)</p>
-			<img src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%202_zpsbrumvywo.png">
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2031_zps8kyrwsac.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Even though Hemsworth started his career not even a decade ago, he's starred in a few box office hits. His drop in ratings tells us he should stick to super hero movies.</p>
 		</div>
 	</div>
 </div>
@@ -1127,7 +1256,15 @@
 		</div>
 
 		<div class="col-sm-2">
-			<img src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%201_zpsbybmwgz8.png" style="width: 112px; height: 98px;">
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2025_zpsstrsc0kn.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Arguably not an actor. &nbsp;See: <a href="#matt">Matt Damon</a>.</p>
 		</div>
 	</div>
 </div>
@@ -1159,7 +1296,24 @@
 		</div>
 
 		<div class="col-sm-2">
-			<p>hello this is the rating change area</p>
+			<img class="ratingchg" src="http://i1352.photobucket.com/albums/q643/alanz09/Asset%2029_zpsteooulmb.png">
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<p class="intro_text">Perhaps not a fair fight, as "The Rock" just received his award less than a year ago, but we've seen a slow climb in ratings for the former wrestler since his role as Scorpion King.</p>
+		</div>
+	</div>
+</div>
+
+<!-- End ====================================================================--> 
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<a href="#top" class="bottom">back to top</a>
 		</div>
 	</div>
 </div>

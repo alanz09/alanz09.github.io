@@ -1,5 +1,5 @@
 // Set the dimensions of the canvas / graph
-var margin = {top: 30, right: 40, bottom: 50, left: 70},
+var margin = {top: 40, right: 40, bottom: 50, left: 70},
     width = 800 - margin.left - margin.right,
     height = 250 - margin.top - margin.bottom;
 
@@ -158,13 +158,13 @@ data = [{movie:"The LEGO Batman Movie",year:2017,rating:90,box_office:173939726}
       .style("font-size", "11px")
       .text("Year");
 
-    svg.append("text") // "March" to end of line
-    .attr("transform", "translate(" + (width+3) + "," + y(data[0].open) + ")")
-    .attr("dy", "3.3em")
-    .attr("dx", "77.5em")
-    .attr("text-anchor", "end")
-    .style("fill", "green")
-    .text("March");
+    d3.select("#tatumchart svg")
+    .append("svg:image")
+    .attr("xlink:href", "http://i1352.photobucket.com/albums/q643/alanz09/trophy_zpsye79myc6.png")
+    .attr("width", 40)
+    .attr("height", 40)
+    .attr("x", 453)
+    .attr("y",-1.5);
 
   // Dynamic text?
   /* var vertical = d3.select("body")
